@@ -1,73 +1,47 @@
 import React, { useEffect } from 'react'
 import './Navbar.css'
-import { Link } from "react-router-dom";
 
 function Navbar(props) {
     useEffect(() => {
-        if (props.navbarStick) {
-            window.addEventListener("scroll", makeNavbarStick);
-        }
-        return function cleanup() {
-            if (props.navbarStick) {
-              window.removeEventListener("scroll", makeNavbarStick);
-            }
-        };
+      if (props.navbarDark) {
+          window.addEventListener("scroll", makeNavbarDark);
+      }
+      return function cleanup() {
+          if (props.navbarDark) {
+            window.removeEventListener("scroll", makeNavbarDark);
+          }
+      };
     }, [])
 
-    const makeNavbarStick = () => {
-        const { navbarStick } = props;
+    const makeNavbarDark = () => {
+        const { navbarDark } = props;
         const windowsScrollTop = window.pageYOffset;
-        if (windowsScrollTop > navbarStick.height) {
+        if (windowsScrollTop > navbarDark.height) {
             // document.body.getElementsByTagName("nav")[0].classList.remove(classes[color]);
-            document.body.getElementsByTagName("header")[0].classList.add("sticky")
-        } else {
-            document.body.getElementsByTagName("header")[0].classList.remove("sticky")
+            document.body.querySelector(`.nav-selector`).classList.add('dark-nav')
+          } else {
+            document.body.querySelector(`.nav-selector`).classList.remove('dark-nav')
             
         }
     };
-
-    const handleClick = (e) =>{
-        document.body.getElementsByClassName('navbar-main')[0].classList.toggle('navbar-mobile')
-        document.body.getElementsByClassName('nav-btn')[0].classList.toggle('bi-list')
-        document.body.getElementsByClassName('nav-btn')[0].classList.toggle('bi-x')
-        
-    }
-    const handleClick2 = (e) =>{
-        if(document.body.getElementsByClassName('navbar-mobile')[0]){
-            document.body.getElementsByClassName('navbar-mobile')[0].classList.remove('navbar-mobile')
-            document.body.getElementsByClassName('nav-btn')[0].classList.toggle('bi-list')
-            document.body.getElementsByClassName('nav-btn')[0].classList.toggle('bi-x')
-        }
-        
-    }
-
     return (
-        <div>
-            <header id="header" className="d-flex align-items-center">
-                <div className="container d-flex align-items-center justify-content-between">
+      <div id="toggle-nav-full" className="navbar-wrapper nav-selector" data-spy="affix" data-offset-top="100" data-offset-bottom="100">
+        <div className="container">
+          <nav className="navbar navbar-inverse navbar-static-top">
+            <div className="navbar-header">
+              
+              <a className="navbar-brand" href="https://wildwomenexpeditions.com">
+                <img src=
+                  "https://wildwomenexpeditions.com/wp-content/uploads/newlogo-1.png"
+                  className="img-responsive" alt=
+                  "Wild Women Expeditions logo. "></img>
 
-                <h1 className="logo"><Link to="/">Learn-to-swim<span>.</span></Link></h1>
-                {/* Uncomment below if you prefer to use an image logo
-                <a href="index.html" className="logo"><img src="assets/img/logo.png" alt=""></img></a> */}
-
-                <nav id="navbar" className="navbar navbar-main">
-                    <ul>
-                    <li><a onClick={handleClick2} className="nav-link scrollto hero-x" href="#hero">Home</a></li>
-                    <li><a onClick={handleClick2} className="nav-link scrollto about-x" href="#about">About</a></li>
-                    <li><a onClick={handleClick2} className="nav-link scrollto features-x" href="#features">Gallery</a></li>
-                    <li><a onClick={handleClick2} className="nav-link scrollto services-x" href="#services">Curriculum</a></li>
-                    <li><a onClick={handleClick2} className="nav-link scrollto contact-us-x" href="#contact-us">Contact Us</a></li>
-                    <li><Link to='/login' className="nav-link scrollto">Login</Link></li>
-                    
-                    </ul>
-                    <i className="bi nav-btn bi-list mobile-nav-toggle" onClick={handleClick}></i>
-                </nav>
-
-                </div>
-            </header>
-
-      
+              </a>
+            </div>
+            
+          </nav>
         </div>
+      </div>
     )
 }
 

@@ -1,28 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './kilimanjaro-routes/SelectedRoute.css';
+import './trip-details/TripDetails.css'
+import './fonts/IndonesiaMerdeka/Indonesia-Merdeka.ttf'
+import './fonts/Montserrat/Montserrat-VariableFont_wght.ttf'
+import './fonts/Journal/JOURNAL.TTF'
 import App from './App';
-import PricingPage from './user-pages/PricingPage'
-import Register from './pages/Register'
+import KilimanjaroRoutes from './KilimanjaroRoutes';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
-import Login from './pages/Login';
-import AdminClients from './admin-pages/AdminClients';
-import AdminHome from './admin-pages/AdminHome';
-import UserCalendar from './user-pages/UserCalendar';
-import UserOverview from './user-pages/UserOverview';
-import UserMessages from './user-pages/UserMessages';
-import AdminHomeSection from './admin-pages/admin-sections/AdminHomeSection';
-import AdminAboutSection from './admin-pages/admin-sections/AdminAboutSection';
-import AdminContactSection from './admin-pages/admin-sections/AdminContactSection';
-import AdminAddImage from './admin-pages/admin-sections/admin-add-edit-section/AdminAddImage';
-import AdminEditImage from './admin-pages/admin-sections/admin-add-edit-section/AdminEditImage';
-import BookSession from './user-pages/BookSession';
-import AdminGallerySection from './admin-pages/admin-sections/AdminGallerySection';
-import AdminPricing from './admin-pages/AdminPricing';
-import AdminAddPricing from './admin-pages/admin-sections/admin-add-edit-pricing/AdminAddPricing';
-import AdminEditPricing from './admin-pages/admin-sections/admin-add-edit-pricing/AdminEditPricing';
+import NorthernCircuitRoute from './kilimanjaro-routes/NorthernCircuitRoute';
+import LemoshoRoute from './kilimanjaro-routes/LemoshoRoute';
+import MachameRoute from './kilimanjaro-routes/MachameRoute';
+import RongaiRoute from './kilimanjaro-routes/RongaiRoute';
+import MaranguRoute from './kilimanjaro-routes/MaranguRoute';
+import UmbweRoute from './kilimanjaro-routes/UmbweRoute';
+import BookNow from './BookNow';
+import ConfirmMpesaCode from './ConfirmMpesaCode';
+import AdminLogin from './Admin/AdminLogin';
+import AdminHome from './Admin/AdminHome';
+import AdminClients from './Admin/AdminClients';
+import AdminMpesaPayments from './Admin/AdminMpesaPayments';
+import AdminCardPayments from './Admin/AdminCardPayments';
+import AdminTripDates from './Admin/AdminTripDates';
+import AdminAddTripDate from './Admin/admin-add-edit-trip-dates/AdminAddTripDate';
+import AdminEditTripDate from './Admin/admin-add-edit-trip-dates/AdminEditTripDate';
+import AdminCrew from './Admin/AdminCrew';
+import AdminAddCrew from './Admin/admin-add-edit-crew/AdminAddCrew';
+import AdminEditCrew from './Admin/admin-add-edit-crew/AdminEditCrew';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -31,30 +39,33 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' index element={<App />} />
-        <Route path='/pricing' element={<PricingPage />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/book-a-session' element={<BookSession />} />
+
+        <Route path='/routes' index element={<KilimanjaroRoutes />} />
+
+        <Route path='/routes/selected/northern-circuit-route' index element={<NorthernCircuitRoute />} />
+        <Route path='/routes/selected/lemosho-route' index element={<LemoshoRoute />} />
+        <Route path='/routes/selected/machame-route' index element={<MachameRoute />} />
+        <Route path='/routes/selected/rongai-route' index element={<RongaiRoute />} />
+        <Route path='/routes/selected/marangu-route' index element={<MaranguRoute />} />
+        <Route path='/routes/selected/umbwe-route' index element={<UmbweRoute />} />
         
-        {/* <Route path='/user/overview' element={<UserOverview />} />
-        <Route path='/user/messages' element={<UserMessages />} />
-        <Route path='/user/calendar' element={<UserCalendar />} /> */}
-
-        <Route path='/admin/clients' element={<AdminClients />} />
-        <Route path='/admin/home' element={<AdminHome />} />
-        <Route path='/admin/pricing' element={<AdminPricing />} />
-
-        <Route path='/admin/home/Home/section' element={<AdminHomeSection />} />
-        <Route path='/admin/home/About/section' element={<AdminAboutSection />} />
-        <Route path='/admin/home/Contact/section' element={<AdminContactSection />} />
-        <Route path='/admin/home/Gallery/section' element={<AdminGallerySection />} />
-
-        <Route path='/admin/home/add-image/section' element={<AdminAddImage />} />
-        <Route path='/admin/pricing/add-pricing' element={<AdminAddPricing />} />
-
-        <Route path='/admin/home/section/edit-image/image' element={<AdminEditImage />} />
-        <Route path='/admin/pricing/edit-pricing' element={<AdminEditPricing />} />
+        <Route path='/book-now' index element={<BookNow />} />
+        <Route path='/confirm-mpesa-code' index element={<ConfirmMpesaCode />} />
         
+
+        <Route path='/admin/login' index element={<AdminLogin />} />
+        <Route path='/admin/home' index element={<AdminHome />} />
+        <Route path='/admin/clients' index element={<AdminClients />} />
+        <Route path='/admin/mpesa-payments' index element={<AdminMpesaPayments />} />
+        <Route path='/admin/card-payments' index element={<AdminCardPayments />} />
+        <Route path='/admin/home/trip-dates' index element={<AdminTripDates />} />
+        <Route path='/admin/home/crew' index element={<AdminCrew />} />
+        
+        <Route path='/admin/home/crew/add-crew' index element={<AdminAddCrew />} />
+        <Route path='/admin/home/crew/edit-crew' index element={<AdminEditCrew />} />
+        <Route path='/admin/home/trip-dates/add-date' index element={<AdminAddTripDate />} />
+        <Route path='/admin/home/trip-dates/edit-date' index element={<AdminEditTripDate />} />
+
       </ Routes>
     </ BrowserRouter>
   </CookiesProvider>
