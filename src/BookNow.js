@@ -5,6 +5,7 @@ import { useSearchParams, useNavigate, Link } from 'react-router-dom'
 import { Oval } from 'react-loader-spinner'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
 
 function BookNow() {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -207,21 +208,9 @@ function BookNow() {
             <ToastContainer 
                 theme="dark"
             />
-            {/* <form name="cityselect" className="cityselect_form desktop-version" data-hs-cf-bound="true">
-                <center>     
-                    <select name="menu" id="menu" value="GO" data-nonce="2a08a79487" data-url="https://wildwomenexpeditions.com/wp-admin/admin-ajax.php">
-                        <option selected="selected">
-                            Select Trip Date To Book
-                        </option>
-                        <option data-rec="recLJOeRl2jdVBlqu" value="GTA-USA-ACM-09-23-2023">  
-                            Sep 23 - Sep 29, 2023 @ $4,495 (Almost Full ⏰)
-                        </option>
-                        <option data-rec="recJqgB7MROevFTsg" value="GTA-USA-ACM-10-21-2023">  
-                            Oct 21 - Oct 27, 2023 @ $4,495 (Space Available ✅)
-                        </option>
-                    </select>
-                </center>
-            </form> */}
+            <Helmet>
+                <title>Book Trip</title>
+            </Helmet>
             <article className="card">
                 <div className="container">
                     <div className="card-body">
