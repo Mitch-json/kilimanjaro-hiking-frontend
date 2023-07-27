@@ -26,7 +26,7 @@ function KilimanjaroRoutes() {
                                                     <div className="row">
                                                         <div className="col-sm-12 col-sm-12-margin-right">
                                                             <div className="search-terms">
-                                                                Showing <span className="font-block-style">all </span> trips for <span className="font-block-style">All</span> activites in <span className="font-block-style">United-states</span> destinations.
+                                                                Showing <span className="font-block-style">all </span> routes for <span className="font-block-style">All</span> activites in <span className="font-block-style">Mount Kilimanjaro</span> destinations.
 
                                                                 <div id="ajax-load-more" className="ajax-load-more-wrap default alm-0" >
                                                                     <ul aria-live="polite" aria-atomic="true" className="alm-listing alm-ajax alm-has-transition pull-right" >
