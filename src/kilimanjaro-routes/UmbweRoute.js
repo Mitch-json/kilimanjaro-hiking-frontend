@@ -67,7 +67,7 @@ function UmbweRoute() {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <h1 className="jumbotron-h1">
-                                            Expedition through the Umbwe Route						
+                                            Umbwe Route						
                                         </h1>
                                         <h2 className="subheading jumbotron-subheading-selected-route text-uppercase">
                                             Mount Kilimanjaro

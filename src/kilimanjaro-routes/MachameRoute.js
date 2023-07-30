@@ -69,7 +69,7 @@ function MachameRoute() {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <h1 className="jumbotron-h1">
-                                            Expedition through the Machame Route						
+                                            Machame Route						
                                         </h1>
                                         <h2 className="subheading jumbotron-subheading-selected-route text-uppercase">
                                             Mount Kilimanjaro

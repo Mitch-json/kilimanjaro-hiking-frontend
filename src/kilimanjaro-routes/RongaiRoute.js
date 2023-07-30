@@ -68,7 +68,7 @@ function RongaiRoute() {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <h1 className="jumbotron-h1">
-                                            Expedition through the Rongai Route						
+                                            Rongai Route						
                                         </h1>
                                         <h2 className="subheading jumbotron-subheading-selected-route text-uppercase">
                                             Mount Kilimanjaro
