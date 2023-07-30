@@ -33,7 +33,7 @@ function RongaiExperience() {
                     <p><span style={{fontWeight: "400"}}>Other advantages of choosing the Rongai Route include the potential to spot wildlife, including Colobus Monkeys, in the first few days of the climb. The campsites are also nicely staggered out across the route, ensuring that hikers spend a similar amount of time on the trail each day. And since the trail goes up the north side and down the south side, travelers get a sense of what Kilimanjaro looks like from different perspectives.</span></p>
                     <p><span style={{fontWeight: "400"}}>If there is one criticism of the Rongai Route it is that it may not be as scenic as some of the other routes up Mt. Kilimanjaro. While it is true that the scenery isn’t as varied and dramatic as some of the other trails, there is still plenty to see and enjoy on this path too. And because you’ll encounter so few people, you’ll have an easier time soaking it all in.</span></p>
                 </div>
-                <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
+                 
                 
             </div>
 

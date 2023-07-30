@@ -30,7 +30,7 @@ function NorthernCircuitExperience() {
                     <p><span style={{fontWeight: "400"}}>From there, it is up to the Shira Plateau itself, before heading north to circle in a clockwise direction starting at the Moir Hut, then moving on to Buffalo Camp, and finally School Hut. Along the way, trekkers make an almost 360 degree hike around Kilimanjaro, before summiting from the east.</span></p>
                     <p><span style={{fontWeight: "400"}}>So with everything that the Northern Circuit route has going for it, what’s the downside? The only issue with hiking this route is that it requires a bit of extra time, something that few travelers have. While most of the other routes can be done in as few as six or seven days, the Northern Circuit route often requires as many as nine or more. That often limits the number of people who can work this trail into their schedule, although those that do will find that it is completely worth it.</span></p>
                 </div>
-                <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
+                 
                 
             </div>
 

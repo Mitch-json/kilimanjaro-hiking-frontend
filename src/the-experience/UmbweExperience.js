@@ -31,7 +31,7 @@ function UmbweExperience() {
                     <p><span style={{fontWeight: "400"}}>This helps to give trekkers the feeling that they are the only ones on the mountain until the route merges with Machame route near the Barranco Camp a few days into the hike. From there, it follows the familiar Southern Circuit below the Southern Ice Field before turning up towards the summit from Barafu Camp. As with most Kilimanjaro climbs, the descent is made along the Mweka Route.</span></p>
                     <p><span style={{fontWeight: "400"}}>If you’re looking for the absolutely best views on the way up Mount Kilimanjaro, and you enjoy testing yourself in the wilderness, Umbwe route will provide you with everything you seek, and then some. It is the closest thing you’ll find to a true mountaineering expedition on Kilimanjaro. </span></p>
                 </div>
-                <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
+                 
                 
             </div>
 

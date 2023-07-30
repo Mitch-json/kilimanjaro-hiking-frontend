@@ -29,7 +29,7 @@ function MaranguExperience() {
                     <p><span style={{fontWeight: "400"}}>While staying at those huts, trekkers will sleep in bunk beds equipped with a simple mattress and pillow. They’ll also be able to purchase an array of candy bars, bottled water, and soft drinks, which is why Marangu route is often referred to as the “Coca-Cola Route.”</span></p>
                     <p><span style={{fontWeight: "400"}}>Marangu Route offers a slow, steady climb to each of the daily camps, which has given it the reputation for being an easy trek. Don’t underestimate this trail however, as the approach to the final camp can be physically demanding with roughly 1000 meters of vertical gain on that day alone.</span></p>
                 </div>
-                <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
+                 
                 
             </div>
 

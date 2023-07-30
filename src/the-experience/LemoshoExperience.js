@@ -30,7 +30,7 @@ function LemoshoExperience() {
                     <p><span style={{fontWeight: "400"}}>The early days on the Lemosho Route provides plenty of solitude, as this trail sees far less traffic than Machame route and Marangu route. This makes an already-great trekking adventure even more spectacular as at times it will feel like you have the entire mountain to yourself.</span></p>
                     <p><span style={{fontWeight: "400"}}>Eventually however, Lemosho route merges with Machame route, and the amount of traffic begins to increase. But if you’re looking for a little peace and quiet in the early going of the climb, this is a great option.</span></p>
                 </div>
-                <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
+                 
                 
             </div>
 

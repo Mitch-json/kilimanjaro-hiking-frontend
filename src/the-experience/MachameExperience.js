@@ -29,7 +29,7 @@ function MachameExperience() {
                     <p><span style={{fontWeight: "400"}}>For travelers who have a few extra days in their schedule, Machame route is an excellent option. One or two additional days of acclimatization can make a big difference in the success rate, so trekkers who choose this route reach the summit more often, despite the fact that this is a more challenging hike than Marangu route.</span></p>
                     <p><span style={{fontWeight: "400"}}>One of the biggest and most intimidating of those challenges is the Barranco Wall, a steep cliff face that can look quite scary upon first approach. In reality, Barranco isn’t nearly as frightening or difficult as it first appears, although you will have to watch your step, and possibly use your hands for extra leverage while scrambling over certain sections. The climb usually takes about an hour to an hour and a half to complete, and the view from the top makes it worth the effort.</span></p>
                 </div>
-                <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
+                 
                 
             </div>
 
