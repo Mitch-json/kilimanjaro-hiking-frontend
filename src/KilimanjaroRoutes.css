@@ -171,3 +171,28 @@ a.excerpt-wrap-link:focus, a.excerpt-wrap-link:hover {
         max-width: 600px !important;
     }
 }
+
+.figure {
+    position: relative;
+    max-width: 100%;
+  }
+  .figure img.Sirv.image-main {
+    transition: opacity .9s;
+  }
+  .figure img.Sirv.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .9s;
+  }
+  .figure:hover img.Sirv.image-hover {
+    opacity: 1 !important;
+  }
+  .figure:hover img.Sirv.image-main {
+    opacity: 0 !important;
+  }
+

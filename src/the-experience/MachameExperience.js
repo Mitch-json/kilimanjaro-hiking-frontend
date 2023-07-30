@@ -1,18 +1,33 @@
 import React from 'react'
+import { Carousel } from 'react-responsive-carousel';
 
 function MachameExperience() {
     return (
         <div className="tab-content">
             <div role="tabpanel" className="tab-pane fade in active" id="the-experience">
-                <img src="https://wildwomenexpeditions.com/wp-content/uploads/1-52.png" alt="Arches and Canyonlands Multisport Adventure" className="img-responsive"></img>
+                <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} interval={4000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
+                    
+                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690571940/kilimaj-hiking/experience/experience-machame_sqxgqm.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
+                        <div className="border-div experience-border-div no-pad">
+                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                        </div>
+                    </div>
+                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690674668/kilimaj-hiking/machame/cover/machame-map_dr7fbg.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
+                        <div className="border-div experience-border-div no-pad">
+                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                        </div>
+                    </div>
+                </Carousel>
                 <h2 className="trips_heading">About the Experience</h2>
                 <div>
-                    <p><span style={{fontWeight: "400"}}>The iconic parks of the American Southwest speak directly to women drawn to the dramatic desert landscape. The red sandstone spires, hoodoos and impossibly balanced boulders and formations of Arches and Canyonlands National Park create an enormous and often unbelievable open-air gallery.</span></p>
-                    <p><span style={{fontWeight: "400"}}>We’ll explore the parks in the most intimate ways–rappelling into carved canyons, rafting the mighty Colorado and hiking a network of trails that lead to some of the most famed arches and pinnacles.</span></p>
-                    <p><span style={{fontWeight: "400"}}>This Wild Women road trip is designed for adrenaline-junkies, geology nerds and those who ask for “more desert” instead of dessert (but you can certainly have your cake and eat it too on this trip).&nbsp;</span></p>
-                    <p><span style={{fontWeight: "400"}}>We’ll experience the natural oddities of Island in the Sky and the Needles district, known for its peculiar potholes, petroglyphs and slickrock. In no time you’ll know your mesas from your buttes and your butt from your legs after a day of canyoneering!</span></p>
-                    <p><span style={{fontWeight: "400"}}>This itinerary is jam-packed with activity and challenge with well-deserved pampering at day’s end! We’ll do this Wild Women Southwest road trip in total style and stay in yurts for a ‘soft cowgirl’ kind of experience.</span></p>
-                    <p><span style={{fontWeight: "400"}}>Ready to rappel into this one? This trip is a brand new addition to our signature trips line-up–are you ready to rock and roll with us?</span></p>
+                    <p><span style={{fontWeight: "400"}}>The Machame route, also known as the “Whiskey” route, is a six or seven day camping route and is most popular route on Kilimanjaro. This trail offers stunning views, a reasonable challenge, and plenty of time to acclimate, making it a good choice for those who have a bit of extra time in their schedule. </span></p>
+                    <p><span style={{fontWeight: "400"}}>Machame route has been nicknamed the “Whiskey Route” because it is often perceived as being tougher than Marangu route, which is often referred to as the “Coca-Cola” route. Unlike that trail however, camping is allowed on Machame, which means trekkers will be sleeping in tents all the way to the summit.</span></p>
+                    <p><span style={{fontWeight: "400"}}>Trekkers who take the Machame Route pass several well known Mount Kilimanjaro landmarks while en route, including the famed Lava Tower and Shira Plateau. The route wanders up and down a series of valleys and ridges, which make the walk a bit more strenuous, but rewards hikers with some of the best views on the mountain.</span></p>
+                    <p><span style={{fontWeight: "400"}}>It is for that reason that Machame route is widely considered to be the most scenic of all of the routes up Mount Kilimanjaro, providing unique and varied landscapes to pass through on each and every day. The trail starts on the south side of the mountain, passes underneath the Southern Ice Field and makes its summit approach from the Barafu Camp.</span></p>
+                    <p><span style={{fontWeight: "400"}}>For travelers who have a few extra days in their schedule, Machame route is an excellent option. One or two additional days of acclimatization can make a big difference in the success rate, so trekkers who choose this route reach the summit more often, despite the fact that this is a more challenging hike than Marangu route.</span></p>
+                    <p><span style={{fontWeight: "400"}}>One of the biggest and most intimidating of those challenges is the Barranco Wall, a steep cliff face that can look quite scary upon first approach. In reality, Barranco isn’t nearly as frightening or difficult as it first appears, although you will have to watch your step, and possibly use your hands for extra leverage while scrambling over certain sections. The climb usually takes about an hour to an hour and a half to complete, and the view from the top makes it worth the effort.</span></p>
                 </div>
                 <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
                 

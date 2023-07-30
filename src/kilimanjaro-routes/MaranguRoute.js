@@ -60,17 +60,17 @@ function MaranguRoute() {
             </Helmet>
             <div className="template-wrapper template-wrapper-single-trip single-trips">
                 <Navbar navbarDark={{height: 100}} />
-                <div className="jumbotron-wrapper selected-route-jumbotron" style={{backgroundImage: `url('https://www.safaritravelplus.com/wp-content/uploads/2018/05/2839845f.jpg')`}}>
+                <div className="jumbotron-wrapper selected-route-jumbotron" style={{backgroundImage: `url('https://res.cloudinary.com/dwxzlruyd/image/upload/v1690675033/kilimaj-hiking/marangu/cover/20220530_072012_nha4kq.jpg')`}}>
                     <div className="jumbotron jumbotron-wrapper-inner jumbotron-wrapper-inner-2">
                         <div className="inner-content text-center">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <h1 className="jumbotron-h1">
-                                            Arches and Canyonlands Multisport Adventure							
+                                            Expedition through the Marangu Route						
                                         </h1>
                                         <h2 className="subheading jumbotron-subheading-selected-route text-uppercase">
-                                            United States 
+                                            Mount Kilimanjaro
                                         </h2>
                                             
                                     </div>

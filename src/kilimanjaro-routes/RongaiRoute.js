@@ -61,17 +61,17 @@ function RongaiRoute() {
             </Helmet>
             <div className="template-wrapper template-wrapper-single-trip single-trips">
                 <Navbar navbarDark={{height: 100}} />
-                <div className="jumbotron-wrapper selected-route-jumbotron" style={{backgroundImage: `url('https://www.datocms-assets.com/55179/1647371881-climbing-kilimanjaro-via-the-rongai-route.jpg')`}}>
+                <div className="jumbotron-wrapper selected-route-jumbotron" style={{backgroundImage: `url('https://res.cloudinary.com/dwxzlruyd/image/upload/v1690675968/kilimaj-hiking/rongai/cover/20220531_113502_apdbth.jpg')`}}>
                     <div className="jumbotron jumbotron-wrapper-inner jumbotron-wrapper-inner-2">
                         <div className="inner-content text-center">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <h1 className="jumbotron-h1">
-                                            Arches and Canyonlands Multisport Adventure							
+                                            Expedition through the Rongai Route						
                                         </h1>
                                         <h2 className="subheading jumbotron-subheading-selected-route text-uppercase">
-                                            United States 
+                                            Mount Kilimanjaro
                                         </h2>
                                             
                                     </div>

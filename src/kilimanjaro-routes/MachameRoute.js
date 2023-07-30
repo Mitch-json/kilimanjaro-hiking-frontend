@@ -62,17 +62,17 @@ function MachameRoute() {
             </Helmet>
             <div className="template-wrapper template-wrapper-single-trip single-trips">
                 <Navbar navbarDark={{height: 100}} />
-                <div className="jumbotron-wrapper selected-route-jumbotron" style={{backgroundImage: `url('https://machame.com/wp-content/uploads/2018/11/shutterstock_1036078498-840x385.jpg')`}}>
+                <div className="jumbotron-wrapper selected-route-jumbotron" style={{backgroundImage: `url('https://res.cloudinary.com/dwxzlruyd/image/upload/v1690674648/kilimaj-hiking/machame/cover/20220530_121116_rf5ehm.jpg')`}}>
                     <div className="jumbotron jumbotron-wrapper-inner jumbotron-wrapper-inner-2">
                         <div className="inner-content text-center">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <h1 className="jumbotron-h1">
-                                            Arches and Canyonlands Multisport Adventure							
+                                            Expedition through the Machame Route						
                                         </h1>
                                         <h2 className="subheading jumbotron-subheading-selected-route text-uppercase">
-                                            United States 
+                                            Mount Kilimanjaro
                                         </h2>
                                             
                                     </div>

@@ -359,3 +359,16 @@ li.list-group-item.text-uppercase.single-trip-dates {
     width: auto !important;
     align-items: center !important;
 }
+
+.carousel-slide-caption-experience {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.experience-images{
+    width: 100% !important;
+}
+.experience-border-div{
+    width: 100% !important;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function NavbarRest() {
     return (
@@ -7,13 +8,12 @@ function NavbarRest() {
             <nav className="navbar navbar-inverse navbar-static-top">
                 <div className="navbar-header">
                 
-                <a className="navbar-brand" href="https://wildwomenexpeditions.com">
-                    <img src=
-                    "https://wildwomenexpeditions.com/wp-content/uploads/newlogo-1.png"
+                <Link className="navbar-brand" to="/">
+                    <img src={require('../assets/logo/KILIMAJ-HIKING-LOGO.png')}
                     className="img-responsive" alt=
-                    "Wild Women Expeditions logo. "></img>
+                    "Kilimaj-hiking logo. " style={{maxWidth: '500px'}}></img>
 
-                </a>
+                </Link>
                 </div>
                 
             </nav>

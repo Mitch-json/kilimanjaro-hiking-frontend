@@ -1,18 +1,34 @@
 import React from 'react'
+import { Carousel } from 'react-responsive-carousel';
 
 function NorthernCircuitExperience() {
     return (
         <div className="tab-content">
             <div role="tabpanel" className="tab-pane fade in active" id="the-experience">
-                <img src="https://wildwomenexpeditions.com/wp-content/uploads/1-52.png" alt="Arches and Canyonlands Multisport Adventure" className="img-responsive"></img>
+                <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} interval={4000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
+                    
+                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690572384/kilimaj-hiking/experience/experience-northern-circuit_ywptbu.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
+                        <div className="border-div experience-border-div no-pad">
+                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                        </div>
+                    </div>
+                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690675543/kilimaj-hiking/northern-circuit/cover/northern-circuit-map_qvdybx.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
+                        <div className="border-div experience-border-div no-pad">
+                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                        </div>
+                    </div>
+                </Carousel>
                 <h2 className="trips_heading">About the Experience</h2>
                 <div>
-                    <p><span style={{fontWeight: "400"}}>The iconic parks of the American Southwest speak directly to women drawn to the dramatic desert landscape. The red sandstone spires, hoodoos and impossibly balanced boulders and formations of Arches and Canyonlands National Park create an enormous and often unbelievable open-air gallery.</span></p>
-                    <p><span style={{fontWeight: "400"}}>We’ll explore the parks in the most intimate ways–rappelling into carved canyons, rafting the mighty Colorado and hiking a network of trails that lead to some of the most famed arches and pinnacles.</span></p>
-                    <p><span style={{fontWeight: "400"}}>This Wild Women road trip is designed for adrenaline-junkies, geology nerds and those who ask for “more desert” instead of dessert (but you can certainly have your cake and eat it too on this trip).&nbsp;</span></p>
-                    <p><span style={{fontWeight: "400"}}>We’ll experience the natural oddities of Island in the Sky and the Needles district, known for its peculiar potholes, petroglyphs and slickrock. In no time you’ll know your mesas from your buttes and your butt from your legs after a day of canyoneering!</span></p>
-                    <p><span style={{fontWeight: "400"}}>This itinerary is jam-packed with activity and challenge with well-deserved pampering at day’s end! We’ll do this Wild Women Southwest road trip in total style and stay in yurts for a ‘soft cowgirl’ kind of experience.</span></p>
-                    <p><span style={{fontWeight: "400"}}>Ready to rappel into this one? This trip is a brand new addition to our signature trips line-up–are you ready to rock and roll with us?</span></p>
+                    <p><span style={{fontWeight: "400"}}>The Northern Circuit route is the newest route up Mount Kilimanjaro and arguably the best. That’s because the a combination of all of the best elements of the other routes, rolled into one fantastic hike. If you’re looking for beautiful scenery, plenty of solitude, a healthy challenge, and the potential to spot wildlife, this is definitely the route for you.</span></p>
+                    <p><span style={{fontWeight: "400"}}>Because the Northern Circuit route is longer than the other trails, it gives trekkers a chance to take in more of the mountain. Not only do they get a chance to hike across the awe-inspiring Shira Plateau, they’ll also catch glimpses of Kibo Peak and Uhuru Summit along the way.</span></p>
+                    <p><span style={{fontWeight: "400"}}>Northern Circuit Route has the highest Kilimanjaro Success Rate which is 98% and approaches from south of Kilimanjaro. It is the newest and longest route which offers the most spectacular view of overall 360 degree scenery of Mount Kilimanjaro. Climbing Mount Kilimanjaro on this route takes 8 to 9 days for the summit.</span></p>
+                    <p><span style={{fontWeight: "400"}}>Due to its extended length, much of which hovers around the same altitude for improved acclimatization, the Northern Circuit route has the highest success rate of any of the routes on Mount Kilimanjaro.</span></p>
+                    <p><span style={{fontWeight: "400"}}>The trek begins at the Londorossi Gate and makes its way up the western flanks of the mountain, passing through the rainforest and climbing onto the the Shira Ridge.</span></p>
+                    <p><span style={{fontWeight: "400"}}>From there, it is up to the Shira Plateau itself, before heading north to circle in a clockwise direction starting at the Moir Hut, then moving on to Buffalo Camp, and finally School Hut. Along the way, trekkers make an almost 360 degree hike around Kilimanjaro, before summiting from the east.</span></p>
+                    <p><span style={{fontWeight: "400"}}>So with everything that the Northern Circuit route has going for it, what’s the downside? The only issue with hiking this route is that it requires a bit of extra time, something that few travelers have. While most of the other routes can be done in as few as six or seven days, the Northern Circuit route often requires as many as nine or more. That often limits the number of people who can work this trail into their schedule, although those that do will find that it is completely worth it.</span></p>
                 </div>
                 <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
                 

@@ -1,18 +1,33 @@
 import React from 'react'
+import { Carousel } from 'react-responsive-carousel';
 
 function MaranguExperience() {
     return (
         <div className="tab-content">
             <div role="tabpanel" className="tab-pane fade in active" id="the-experience">
-                <img src="https://wildwomenexpeditions.com/wp-content/uploads/1-52.png" alt="Arches and Canyonlands Multisport Adventure" className="img-responsive"></img>
+                <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} interval={4000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
+                    
+                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690572007/kilimaj-hiking/experience/experience-marangu_sptzzw.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
+                        <div className="border-div experience-border-div no-pad">
+                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                        </div>
+                    </div>
+                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690674885/kilimaj-hiking/marangu/cover/marangu-map_kd7iw6.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
+                        <div className="border-div experience-border-div no-pad">
+                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                        </div>
+                    </div>
+                </Carousel>
                 <h2 className="trips_heading">About the Experience</h2>
                 <div>
-                    <p><span style={{fontWeight: "400"}}>The iconic parks of the American Southwest speak directly to women drawn to the dramatic desert landscape. The red sandstone spires, hoodoos and impossibly balanced boulders and formations of Arches and Canyonlands National Park create an enormous and often unbelievable open-air gallery.</span></p>
-                    <p><span style={{fontWeight: "400"}}>We’ll explore the parks in the most intimate ways–rappelling into carved canyons, rafting the mighty Colorado and hiking a network of trails that lead to some of the most famed arches and pinnacles.</span></p>
-                    <p><span style={{fontWeight: "400"}}>This Wild Women road trip is designed for adrenaline-junkies, geology nerds and those who ask for “more desert” instead of dessert (but you can certainly have your cake and eat it too on this trip).&nbsp;</span></p>
-                    <p><span style={{fontWeight: "400"}}>We’ll experience the natural oddities of Island in the Sky and the Needles district, known for its peculiar potholes, petroglyphs and slickrock. In no time you’ll know your mesas from your buttes and your butt from your legs after a day of canyoneering!</span></p>
-                    <p><span style={{fontWeight: "400"}}>This itinerary is jam-packed with activity and challenge with well-deserved pampering at day’s end! We’ll do this Wild Women Southwest road trip in total style and stay in yurts for a ‘soft cowgirl’ kind of experience.</span></p>
-                    <p><span style={{fontWeight: "400"}}>Ready to rappel into this one? This trip is a brand new addition to our signature trips line-up–are you ready to rock and roll with us?</span></p>
+                    <p><span style={{fontWeight: "400"}}>The Marangu Route also known as the “Coca-Cola Route” is the oldest and most well established trekking route on Mount  Kilimanjaro, and it remains extremely popular mainly because it is the only route on the mountain that has hut accommodation for trekkers.</span></p>
+                    <p><span style={{fontWeight: "400"}}>This path provides trekkers with the classic Kilimanjaro climbing experience, offering sweeping views and a wonderful hiking adventure all the way to the summit of Uhuru Peak. That said, it also has some unique aspects that set it apart from any of the other routes as well, giving Marangu route a character and feeling that is entirely its own.</span></p>
+                    <p><span style={{fontWeight: "400"}}>One of the more interesting aspects of Marangu Route is that it is the only route up Mount Kilimanjaro that doesn’t allow camping, so instead of sleeping in tents, trekkers stay in permanent huts instead.</span></p>
+                    <p><span style={{fontWeight: "400"}}>These dormitory-style shelters provide extra protection from the wind and rain, which makes this route a popular one for travelers climbing during the rainy season, which comes in April and May. There are 60 bunk beds each at Mandara and Kibo Huts, and 120 bunk beds at Horombo Hut</span></p>
+                    <p><span style={{fontWeight: "400"}}>While staying at those huts, trekkers will sleep in bunk beds equipped with a simple mattress and pillow. They’ll also be able to purchase an array of candy bars, bottled water, and soft drinks, which is why Marangu route is often referred to as the “Coca-Cola Route.”</span></p>
+                    <p><span style={{fontWeight: "400"}}>Marangu Route offers a slow, steady climb to each of the daily camps, which has given it the reputation for being an easy trek. Don’t underestimate this trail however, as the approach to the final camp can be physically demanding with roughly 1000 meters of vertical gain on that day alone.</span></p>
                 </div>
                 <a className="new-links exp-scroll" aria-controls="the-experience-tab" role="tab" data-toggle="tab" data-target="#full-itenerary" href="#full-itenerary">Click here to see the full itinerary!</a>
                 

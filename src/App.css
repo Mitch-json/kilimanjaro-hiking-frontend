@@ -265,18 +265,18 @@ h1 {
     font-size: 34px;
   }
   h1{
-    color: #000 !important;
+    /* color: #000 !important; */
     text-shadow: 0 0;
       font-weight: bold !important;
   }
-  div#toggle-nav-full {
+  div#toggle-nav-full-2 {
     background-color: rgba(39,37,38, 0.6) !important;
   }
   .inner-content.text-center {
     position: relative !important;
     bottom: auto !important;
     top: auto !important;
-    margin-top: 40px !important;
+    margin-top: 60px !important;
   }
 }
 
@@ -528,4 +528,8 @@ div#menu-footer-menu-updated a:hover {
 }
 .social-grey a:hover {
   opacity: 0.7;
+}
+
+.carousel .thumbs {
+  padding-left: 0px;
 }
