@@ -53,7 +53,7 @@ function Crew() {
                         </div>
                     </div> 
                 :  
-                    <Carousel autoPlay={true} infiniteLoop={true} interval={3000} showStatus={false} showIndicators={false} transitionTime={500}>
+                    <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} interval={3000} showStatus={false} showIndicators={false} transitionTime={500}>
                         {
                             crewMembers.map(crew => 
                                 <div className="carousel-slide-crew">

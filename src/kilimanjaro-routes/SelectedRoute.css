@@ -68,7 +68,7 @@
 
 @media (max-width: 767px){
  .jumbotron-wrapper-inner-2 {
-    background-image: url('https://wildwomenexpeditions.com/wp-content/themes/bootstrap3.3.5/images/WW_HOME_FRAME.png') !important;
+    background-image: url('../assets/wb.png') !important;
 }
 }
 

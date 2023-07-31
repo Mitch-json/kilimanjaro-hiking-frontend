@@ -5,18 +5,18 @@ function UmbweExperience() {
     return (
         <div className="tab-content">
             <div role="tabpanel" className="tab-pane fade in active" id="the-experience">
-                <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} interval={4000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
+                <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} showArrows={false} interval={4000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
                     
                     <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690572728/kilimaj-hiking/experience/experience-umbwe_wixrm3.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
                         <div className="border-div experience-border-div no-pad">
-                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
                         </div>
                     </div>
                     <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690676128/kilimaj-hiking/umbwe/cover/umbwe-map_bgntlz.png" alt="" className="img-responsive center-block routes-images experience-images"></img>
                         <div className="border-div experience-border-div no-pad">
-                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
                         </div>
                     </div>
                 </Carousel>

@@ -28,10 +28,7 @@ function App() {
               </div>
             </div>
           
-            {/* <div style={{position: "relative"}} className="for-mobile">
-              <img src="https://wildwomenexpeditions.com/wp-content/uploads/fullsizeoutput_a02-1.jpeg"></img>
-              <div className="mframe" style={{background: "url(https://wildwomenexpeditions.com/wp-content/themes/bootstrap3.3.5/images/WW_HOME_FRAME.png)"}}></div>
-            </div> */}
+            
             <div className="home-menu-wrap">
               <div className="container">
                 <div className="row">

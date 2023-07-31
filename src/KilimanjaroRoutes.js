@@ -38,7 +38,7 @@ function KilimanjaroRoutes() {
                                                                                         <div className="feature-img-wrap">
                                                                                             <img  src="https://www.adventurealternative.com/media/817309/northern-circuit-kilimanjaro-camping-trip.jpg" alt="" className="img-responsive center-block routes-images"></img>
                                                                                             <div className="border-div no-pad">
-                                                                                                <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block"></img>
+                                                                                                <img src={require('./assets/wb.png')} alt="..." className="img-responsive center-block"></img>
                                                                                             </div>
                                                                                         </div>
                                                                                     </Link>
@@ -61,7 +61,7 @@ function KilimanjaroRoutes() {
                                                                                         <div className="feature-img-wrap">
                                                                                             <img src="https://www.weseektravel.com/wp-content/uploads/2023/07/lemosho-route-barranco-8-1024x683.jpg" alt="" className="img-responsive center-block routes-images"></img>
                                                                                             <div className="border-div no-pad">
-                                                                                                <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block"></img>
+                                                                                                <img src={require('./assets/wb.png')} alt="..." className="img-responsive center-block"></img>
                                                                                             </div>
                                                                                         </div>
                                                                                     </Link>
@@ -84,7 +84,7 @@ function KilimanjaroRoutes() {
                                                                                         <div className="feature-img-wrap">
                                                                                             <img src="https://machame.com/wp-content/uploads/2018/11/shutterstock_1036078498-840x385.jpg" alt="" className="img-responsive center-block routes-images"></img>
                                                                                             <div className="border-div no-pad">
-                                                                                                <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block"></img>
+                                                                                                <img src={require('./assets/wb.png')} alt="..." className="img-responsive center-block"></img>
                                                                                             </div>
                                                                                         </div>
                                                                                     </Link>
@@ -107,7 +107,7 @@ function KilimanjaroRoutes() {
                                                                                         <div className="feature-img-wrap">
                                                                                             <img src="https://www.datocms-assets.com/55179/1647371881-climbing-kilimanjaro-via-the-rongai-route.jpg" alt="" className="img-responsive center-block routes-images"></img>
                                                                                             <div className="border-div no-pad">
-                                                                                                <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block"></img>
+                                                                                                <img src={require('./assets/wb.png')} alt="..." className="img-responsive center-block"></img>
                                                                                             </div>
                                                                                         </div>
                                                                                     </Link>
@@ -130,7 +130,7 @@ function KilimanjaroRoutes() {
                                                                                         <div className="feature-img-wrap">
                                                                                             <img src="https://www.safaritravelplus.com/wp-content/uploads/2018/05/2839845f.jpg" alt="" className="img-responsive center-block routes-images"></img>
                                                                                             <div className="border-div no-pad">
-                                                                                                <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block"></img>
+                                                                                                <img src={require('./assets/wb.png')} alt="..." className="img-responsive center-block"></img>
                                                                                             </div>
                                                                                         </div>
                                                                                     </Link>
@@ -153,7 +153,7 @@ function KilimanjaroRoutes() {
                                                                                         <div className="feature-img-wrap">
                                                                                             <img src="https://lenchadasafaris.com/wp-content/uploads/2016/12/Umbwe-Route.jpg" alt="" className="img-responsive center-block routes-images"></img>
                                                                                             <div className="border-div no-pad">
-                                                                                                <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block"></img>
+                                                                                                <img src={require('./assets/wb.png')} alt="..." className="img-responsive center-block"></img>
                                                                                             </div>
                                                                                         </div>
                                                                                     </Link>

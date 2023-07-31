@@ -5,18 +5,18 @@ function MachameExperience() {
     return (
         <div className="tab-content">
             <div role="tabpanel" className="tab-pane fade in active" id="the-experience">
-                <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} interval={4000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
+                <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} showArrows={false} interval={4000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
                     
                     <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690571940/kilimaj-hiking/experience/experience-machame_sqxgqm.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
                         <div className="border-div experience-border-div no-pad">
-                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
                         </div>
                     </div>
                     <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690674668/kilimaj-hiking/machame/cover/machame-map_dr7fbg.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
                         <div className="border-div experience-border-div no-pad">
-                            <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690678159/kilimaj-hiking/white-photo-border-triplisting_yzx736.png" alt="..." className="img-responsive center-block experience-images"></img>
+                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
                         </div>
                     </div>
                 </Carousel>

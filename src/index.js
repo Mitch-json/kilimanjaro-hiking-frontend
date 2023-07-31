@@ -30,6 +30,9 @@ import AdminEditTripDate from './Admin/admin-add-edit-trip-dates/AdminEditTripDa
 import AdminCrew from './Admin/AdminCrew';
 import AdminAddCrew from './Admin/admin-add-edit-crew/AdminAddCrew';
 import AdminEditCrew from './Admin/admin-add-edit-crew/AdminEditCrew';
+import AboutUs from './footer-pages/about-us/AboutUs';
+import ContactUs from './footer-pages/contact-us/ContactUs';
+import BookingTerms from './footer-pages/booking-terms/BookingTerms';
 
 
 
@@ -41,6 +44,9 @@ root.render(
         <Route path='/' index element={<App />} />
 
         <Route path='/routes' index element={<KilimanjaroRoutes />} />
+        <Route path='/about-us' index element={<AboutUs />} />
+        <Route path='/contact-us' index element={<ContactUs />} />
+        <Route path='/terms-and-conditions' index element={<BookingTerms />} />
 
         <Route path='/routes/selected/northern-circuit-route' index element={<NorthernCircuitRoute />} />
         <Route path='/routes/selected/lemosho-route' index element={<LemoshoRoute />} />

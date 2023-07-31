@@ -148,12 +148,12 @@ img {
   z-index: 999;
 }
 .home-jumbotron-wrapper .jumbotron-wrapper-inner {
-  background-image: url('https://wildwomenexpeditions.com/wp-content/themes/bootstrap3.3.5/images/WW_HOME_FRAME.png');
+  background-image: url('./assets/wb.png');
 }
 .jumbotron-wrapper-inner {
   display: table-cell;
   vertical-align: middle;
-  background-image: url('https://wildwomenexpeditions.com/wp-content/themes/bootstrap3.3.5/images/WW_HOME_FRAME.png');
+  background-image: url('./assets/wb.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;

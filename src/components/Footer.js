@@ -7,31 +7,20 @@ function Footer() {
             <div className="container">
             <div id="menu-footer-menu-updated">
                 <p>
-                    <Link to="/terms-and-conditions/">Booking Terms </Link>|   
-                    <Link to="/creating-a-safe-space/">COVID Safety </Link>|  
+                    <Link to="/terms-and-conditions">Booking Terms </Link>|   
+                    <Link to="/contact-us">Contact Us</Link>|  
                     <Link to="/privacy-policy/">Privacy Policy </Link>|
-                    <Link to="https://wildwomenexpeditions.com/a-little-about-us/">About Us</Link>|
+                    <Link to="/about-us">About Us</Link>|
                     <Link to="https://wildwomenexpeditions.com/guide">Guides</Link>|
                     <Link to="#">Activity</Link>
                 </p>
                 <p>
-                    <Link to="#">Flexible Booking</Link> |
-                    <Link to="#">Travel Insurance</Link> |
-                    <Link to="#">FAQ</Link> |
-                    <Link to="#">Videos</Link> |
-                    <Link to="#">Podcast</Link> |
-                    <Link to="#">Blog</Link> |
-                    <Link to="#">Destinations</Link> |
-                    <Link to="#">Adventure Calendar 2023</Link> |
-                    <Link to="#">Adventure Calendar 2024</Link>              
-                </p>
-                <p>
-                <Link to="/admin/login">Admin Login</Link>
+                    <Link to="/admin/login">Admin Login</Link>
                 </p>
             </div>
             <div className="subtle-footer">
                 <p>
-                    <Link to="/contact-us-2/"><u>Contact Us</u></Link>
+                    <Link to="/contact-us"><u>Contact Us</u></Link>
                 </p>
                 <span>
                     <i className="fas fa-envelope"></i> 
