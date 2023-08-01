@@ -48,10 +48,11 @@ div#drip-ef-crew {
 }
 
 .crew-image {
-    width: 153px !important;
-    height: 153px !important;
+    width: 220px !important;
+    height: 220px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    position: relative !important;
 }
 
 .carousel-slide-crew > .crew-name > h3 {

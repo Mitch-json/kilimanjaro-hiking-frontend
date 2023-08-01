@@ -33,6 +33,8 @@ import AdminEditCrew from './Admin/admin-add-edit-crew/AdminEditCrew';
 import AboutUs from './footer-pages/about-us/AboutUs';
 import ContactUs from './footer-pages/contact-us/ContactUs';
 import BookingTerms from './footer-pages/booking-terms/BookingTerms';
+import FAQ from './footer-pages/FAQs/FAQ';
+import OurCrew from './footer-pages/our-crew/OurCrew';
 
 
 
@@ -47,6 +49,8 @@ root.render(
         <Route path='/about-us' index element={<AboutUs />} />
         <Route path='/contact-us' index element={<ContactUs />} />
         <Route path='/terms-and-conditions' index element={<BookingTerms />} />
+        <Route path='/frequently-asked-questions' index element={<FAQ />} />
+        <Route path='/our-crew' index element={<OurCrew />} />
 
         <Route path='/routes/selected/northern-circuit-route' index element={<NorthernCircuitRoute />} />
         <Route path='/routes/selected/lemosho-route' index element={<LemoshoRoute />} />

@@ -18,7 +18,7 @@ function ContactUs() {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <h1 className="jumbotron-h1">
-                                            Contact Us 					
+                                            Contact Us ... 					
                                         </h1>
                                             
                                     </div>

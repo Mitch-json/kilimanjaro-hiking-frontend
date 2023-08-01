@@ -9,9 +9,9 @@ function Footer() {
                 <p>
                     <Link to="/terms-and-conditions">Booking Terms </Link>|   
                     <Link to="/contact-us">Contact Us</Link>|  
-                    <Link to="/privacy-policy/">Privacy Policy </Link>|
+                    <Link to="/frequently-asked-questions">FAQs </Link>|
                     <Link to="/about-us">About Us</Link>|
-                    <Link to="https://wildwomenexpeditions.com/guide">Guides</Link>|
+                    <Link to="/our-crew">Our Crew</Link>|
                     <Link to="#">Activity</Link>
                 </p>
                 <p>

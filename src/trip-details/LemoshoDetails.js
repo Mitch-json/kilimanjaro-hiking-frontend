@@ -2,7 +2,6 @@ import React from 'react'
 
 function LemoshoDetails() {
     const displayDetail = (detailID) => {
-        console.log(document.body.querySelector(`#${detailID}`).classList[1])
         if(document.body.querySelector(`#${detailID}`).classList[1]){
             document.body.querySelector(`#${detailID}`).classList.remove('ac-text-visible')
         }else{

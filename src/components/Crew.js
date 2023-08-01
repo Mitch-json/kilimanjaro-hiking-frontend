@@ -56,9 +56,12 @@ function Crew() {
                     <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} interval={3000} showStatus={false} showIndicators={false} transitionTime={500}>
                         {
                             crewMembers.map(crew => 
-                                <div className="carousel-slide-crew">
+                                <div key={crew._id} className="carousel-slide-crew">
                                     <div className="crew-image">
                                         <img className="circular--square" src={crew.image}></img>
+                                        <div className="border-div no-pad">
+                                            <img src={require('../assets/wbr.png')} alt="..." ></img>
+                                        </div>
                                     </div>
                                     <div className="crew-name">
                                         <h3><strong>{crew.fullName}</strong></h3>
