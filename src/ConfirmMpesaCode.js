@@ -93,7 +93,7 @@ function ConfirmMpesaCode() {
                                         <></>
                                 }
                                 <div className="field full">
-                                    <label for="zip">Mpesa Code</label>
+                                    <label htmlFor="zip">Mpesa Code</label>
                                     <input id="phone" type="text" value={mpesaCode} onChange={(e)=>setMpesaCode(e.target.value)} placeholder="Mpesa Code" />
                                 </div>
                                 

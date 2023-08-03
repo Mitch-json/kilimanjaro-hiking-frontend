@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import './App.css';
+import BookConsultation from './components/BookConsultation';
 import Crew from './components/Crew';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
@@ -55,6 +56,7 @@ function App() {
       
       </div>
       <Gallery />
+      <BookConsultation />
       {/* <Testimonials /> */}
       <Crew />
       <Footer />

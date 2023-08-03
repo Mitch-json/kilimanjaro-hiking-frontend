@@ -6,6 +6,9 @@ import { Oval } from 'react-loader-spinner'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+import { isValidPhoneNumber } from 'react-phone-number-input'
 
 function BookNow() {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -36,10 +39,22 @@ function BookNow() {
     
 
     useEffect(() => {
+        if (selected === 'credit-card') {
+            if (document.querySelector(".invalid-phone").classList.length === 4) {
+                document.querySelector(".invalid-phone").classList.remove("invalid-phone-error")
+                document.querySelector(".PhoneInputInput").classList.remove("PhoneInputInput-error")
+            }
+        }
+        if (selected === 'mpesa') {
+            if (document.querySelector(".invalid-phone-2").classList.length === 4) {
+                document.querySelector(".invalid-phone-2").classList.remove("invalid-phone-error")
+                document.querySelector(".PhoneInputInput").classList.remove("PhoneInputInput-error")
+            }
+        }
         setKilimanjaroRoute(searchParams.get('route'))
         setTripDate(searchParams.get('selected_date'))
 
-    })
+    },[phone])
 
     const selectPayment = (method)=>{
         setSelected(method)
@@ -107,14 +122,25 @@ function BookNow() {
 
     const handleSubmitMpesa1 = (e)=>{
         e.preventDefault()
+        if(isValidPhoneNumber(phone)){
+            handleMpesa()
+        }else{
+            document.querySelector(".invalid-phone-2").classList.add("invalid-phone-error")
+            document.querySelector(".PhoneInputInput").classList.add("PhoneInputInput-error")
+            document.querySelector(".PhoneInputInput").focus()
+        }
         
-        handleMpesa()
     }
 
     const handleSubmitCard = (e) =>{
         e.preventDefault()
-
-        setCardProgress(cardProgress+100)
+        if(isValidPhoneNumber(phone)){
+            setCardProgress(cardProgress+100)
+        }else{
+            document.querySelector(".invalid-phone").classList.add("invalid-phone-error")
+            document.querySelector(".PhoneInputInput").classList.add("PhoneInputInput-error")
+            document.querySelector(".PhoneInputInput").focus()
+        }
     }
 
     const manualQuery = () =>{
@@ -217,7 +243,13 @@ function BookNow() {
                         <div className="payment-type">
                             <h4>Choose payment method below</h4>
                             <div className="types flex justify-space-between">
-                                <div onClick={(e)=>selectPayment("credit-card")} class={`type ${selected==="credit-card"? 'selected': ''}`}>
+                                <div onClick={(e)=>{
+                                    if (selected === 'mpesa') {
+                                        window.location.reload()
+                                    } else {
+                                        selectPayment("credit-card")
+                                    }
+                                }} className={`type ${selected==="credit-card"? 'selected': ''}`}>
                                     <div className="logo">
                                         <i className="far fa-credit-card"></i>
                                     </div>
@@ -226,7 +258,13 @@ function BookNow() {
                                     </div>
                                 </div>
                                 
-                                <div onClick={(e)=>selectPayment("mpesa")} class={`type ${selected==="mpesa"? 'selected': ''}`}>
+                                <div onClick={(e)=>{
+                                    if (selected === 'credit-card') {
+                                        window.location.reload()
+                                    }else{
+                                        selectPayment("mpesa")
+                                    }
+                                }} className={`type ${selected==="mpesa"? 'selected': ''}`}>
                                     <div className="logo">
                                     <img style={{maxWidth: '75px'}} alt="M-PESA LOGO-01" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/512px-M-PESA_LOGO-01.svg.png" />
                                     </div>
@@ -273,24 +311,32 @@ function BookNow() {
                                                 <h4>Booking Info</h4>
                                             </div>
                                             <div className="field full">
-                                                <label for="address">Kilimanjaro Route</label>
+                                                <label htmlFor="address">Kilimanjaro Route</label>
                                                 <input id="route" type="text" className="fixed-input" value={`${kilimanjaroRoute} route`} disabled placeholder="Kilimanjaro Route" required />
                                             </div>
                                             <div className="field full">
-                                                <label for="address">Selected Trip Date</label>
+                                                <label htmlFor="address">Selected Trip Date</label>
                                                 <input id="route" type="text" className="fixed-input" value={tripDate} disabled placeholder="Selected Trip Date" required />
                                             </div>
                                             <div className="field full">
-                                                <label for="address">Price</label>
+                                                <label htmlFor="address">Price</label>
                                                 <input id="route" type="text" className="fixed-input" disabled value={price} placeholder="Price" required/>
                                             </div>
                                             <div className="field full">
-                                                <label for="name">Full Name</label>
+                                                <label htmlFor="name">Full Name</label>
                                                 <input id="name" type="text" value={fullName} onChange={(e)=>setFullName(e.target.value)} placeholder="Full Name" required />
                                             </div>
                                             <div className="field full">
-                                                <label for="zip">Phone Number</label>
-                                                <input id="phone" type="text" value={phone} onChange={(e)=>setPhone(e.target.value)} placeholder="Phone Number" required/>
+                                                <label htmlFor="zip">Phone Number</label>
+                                                <div className="font-weight-normal fs-16 invalid-phone" style={{marginTop: '10px', color: 'red', fontSize: '12px', display: 'none'}}>
+                                                    Invalid Phone Number
+                                                </div>
+                                                <PhoneInput
+                                                    
+                                                    placeholder="Enter phone number"
+                                                    value={phone}
+                                                    onChange={setPhone}
+                                                     />
                                             </div>
                                             <div className="card-actions flex justify-space-between">
                                                 <div className="flex-start">
@@ -402,27 +448,38 @@ function BookNow() {
                                                     <h4>Booking info</h4>
                                                 </div>
                                                 <div className="field full">
-                                                    <label for="address">Kilimanjaro Route</label>
+                                                    <label htmlFor="address">Kilimanjaro Route</label>
                                                     <input id="route" type="text" className="fixed-input" value={`${kilimanjaroRoute} route`} disabled placeholder="Kilimanjaro Route" required />
                                                 </div>
                                                 <div className="field full">
-                                                    <label for="address">Selected Trip Date</label>
+                                                    <label htmlFor="address">Selected Trip Date</label>
                                                     <input id="route" type="text" className="fixed-input" value={tripDate} disabled placeholder="Selected Trip Date" required />
                                                 </div>
                                                 <div className="field full">
-                                                    <label for="address">Price</label>
+                                                    <label htmlFor="address">Price</label>
                                                     <input id="route" type="text" className="fixed-input" disabled value={price} placeholder="Price" required/>
                                                 </div>
                                                 <div className="field full">
-                                                    <label for="name">Full Name</label>
+                                                    <label htmlFor="name">Full Name</label>
                                                     <input id="name" type="text" value={fullName} onChange={(e)=>setFullName(e.target.value)} placeholder="Full Name" required/>
                                                 </div>
                                                 <div className="field full">
-                                                    <label for="zip">Phone Number</label>
-                                                    <input id="phone" type="text" value={phone} onChange={(e)=>setPhone(e.target.value)} placeholder="Phone Number" required/>
+                                                    <label htmlFor="zip">Phone Number</label>
+                                                    <div className="font-weight-normal fs-16 invalid-phone-2" style={{marginTop: '10px', color: 'red', fontSize: '12px', display: 'none'}}>
+                                                        Invalid Phone Number
+                                                    </div>
+                                                    <PhoneInput
+                                                        international={false}
+                                                        defaultCountry={"KE"}
+                                                        countries={["KE"]}
+                                                        placeholder="Enter phone number"
+                                                        value={phone}
+                                                        onChange={setPhone}
+                                                    />
+                                                    
                                                 </div>
                                                 <div className="field full">
-                                                    <label for="zip">Email</label>
+                                                    <label htmlFor="zip">Email</label>
                                                     <input id="email" type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Email Address" required/>
                                                 </div>
 
@@ -486,11 +543,11 @@ function BookNow() {
                                                             <></>
                                                     }
                                                     <div className="field full">
-                                                        <label for="zip">Phone Number</label>
+                                                        <label htmlFor="zip">Phone Number</label>
                                                         <input id="phone" type="text" className="fixed-input" disabled value={phone} onChange={(e)=>setPhone(e.target.value)} placeholder="Phone Number" />
                                                     </div>
                                                     <div className="field full">
-                                                        <label for="address">Price</label>
+                                                        <label htmlFor="address">Price</label>
                                                         <input id="route" type="text" className="fixed-input" disabled value={price} placeholder="Price" />
                                                     </div>
                                                     {

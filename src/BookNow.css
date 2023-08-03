@@ -570,3 +570,12 @@ svg {
   cursor: no-drop !important;
 }
 
+.PhoneInputInput-error {
+  border-color: red !important;
+  outline: red;
+}
+
+.invalid-phone-error {
+  display: block !important;
+}
+
