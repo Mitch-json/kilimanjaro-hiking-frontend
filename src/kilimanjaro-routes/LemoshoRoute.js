@@ -225,7 +225,7 @@ function LemoshoRoute() {
                                         </ul>
                                     </div>
                                     <div className="well well-inverse new-back" style={{backgroundColor: "#1e1e1e", borderTop: "6px solid white"}}>
-                                        <h3 className="text-uppercase font-block-style" style={{textAlign: "left", fontSize: "13px", fontFamily: "Montserrat-Light, Montserrat ", fontWeight: "400", color: "rgba(255, 255, 255, 0.5)", letterSpacing: "2px", marginLeft: "38px"}}>
+                                        <h3 className="text-uppercase font-block-style" style={{textAlign: "left", fontSize: "13px", fontFamily: "Montserrat-Light, Montserrat ", fontWeight: "400", color: "white", letterSpacing: "2px", marginLeft: "38px"}}>
                                             What's Included
                                         </h3>
                                         <ul>

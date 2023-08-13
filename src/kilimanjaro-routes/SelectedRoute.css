@@ -50,7 +50,7 @@
     /* font-family: "brandon-grotesque", sans-serif; */
     font-weight: 800;
     font-style: normal;
-    font-size: 24px;
+    font-size: 19px;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -120,7 +120,7 @@
     text-transform: uppercase;
     font-family: 'Montserrat' !important;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
 }
 .nav-tabs > li > a {
     margin-right: 2px;
@@ -207,7 +207,9 @@ li.list-group-item.text-uppercase.single-trip-dates {
 }
 
 .list-group-item.text-uppercase.single-trip-dates.new, li.hotlist-popup a:hover, li.hotlist-popup a {
-    background-color: #008080 !important;
+    background-color: #008080;
+    background-image: url('../assets/blue-bg.jpg') !important;
+    background-size: 'cover' !important;
 }
 
 .booking-title, .booking-title a {
@@ -248,7 +250,9 @@ li.list-group-item.text-uppercase.single-trip-dates {
 }
 
 .list-group-item.justify-me.new-boxes .inner {
-    background: #1e1e1e;
+    background-color: #000;
+    background-image: url('../assets/dark-bg.png') !important;
+    background-size: 'cover' !important;
 }
 
 .booking-details-panel .justify-me .inner {
@@ -267,10 +271,10 @@ li.list-group-item.text-uppercase.single-trip-dates {
 .booking-top {
     font-size: 13px;
     line-height: 1.2;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     letter-spacing: 1px;
     font-weight: 400;
-    font-family: Montserrat-Light, Montserrat !important;
+    font-family:  "Montserrat" !important;
 }
 
 .padding-top {
@@ -294,8 +298,8 @@ li.list-group-item.text-uppercase.single-trip-dates {
 
 .well-inverse {
     /* background-color: #272425; */
-    color: #fff;
-    /* box-shadow: none; */
+    color: white !important;
+    background-image: url('../assets/dark-bg-2.jpg') !important;
 }
 
 .well {
@@ -331,7 +335,7 @@ li.list-group-item.text-uppercase.single-trip-dates {
 
 .well.new-back ul li {
     /* font-weight: 400; */
-    color: #B8B8B8;
+    color: white;
     font-size: 14px !important;
 }
 
@@ -347,9 +351,8 @@ li.list-group-item.text-uppercase.single-trip-dates {
 }
 
 .trips_heading{
-    font-size: 25px;
+    font-size: 18px;
     color: #333333;
-    text-transform: uppercase;
     font-weight: 500;
 }
 

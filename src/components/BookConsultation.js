@@ -29,22 +29,25 @@ function BookConsultation() {
             .then((data) => {
                 if(data.msg){
                     setConsSuccessMessage(data.msg)
+                    setSubmitLoading(false)
                 }else if(data.errorBut){
                     setConsSuccessMessage("Online Consultation successfully booked")
+                    setSubmitLoading(false)
                 }else if(data.err){
                     setConsErrorMessage(data.err)
+                    setSubmitLoading(false)
                 }
             })
             .catch(error =>{
-                
+                console.log(error)
                 setSubmitLoading(false)
             })
     }
 
     return (
         <div id="consultation-form">
-            <h3 id="h3-title" style={{fontSize: '40px', marginBottom: '10px', letterSpacing: '3px', textTransform: 'uppercase'}}>Book Free Zoom Meeting</h3>
-            <h3 id="h3-subtitle" style={{fontSize: '30px', marginTop: '5px', letterSpacing: '3px'}}>Online consultation and Q&A with a Guide</h3>
+            <h3 id="h3-title" style={{fontSize: '30px', marginBottom: '10px', letterSpacing: '3px', textTransform: 'uppercase'}}>Book Free Zoom Meeting</h3>
+            <h3 id="h3-subtitle" style={{fontSize: '20px', marginTop: '5px', letterSpacing: '3px'}}>Online consultation and Q&A with a Guide</h3>
 
             <div style={{maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto'}}>
                 {

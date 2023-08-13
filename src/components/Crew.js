@@ -29,9 +29,9 @@ function Crew() {
             })
     }, [])
     return (
-        <div id="drip-ef-crew">
-            <h3 style={{fontSize: '40px', marginBottom: '10px'}}>CREW</h3>
-            <h3 style={{fontSize: '30px', marginTop: '5px'}}>Know the crew members</h3>
+        <div id="drip-ef-crew" className="crew-back">
+            <h3 id="" style={{fontSize: '60px', marginBottom: '10px'}}>CREW</h3>
+            <h3 id="h3-subtitle" style={{fontSize: '20px', marginTop: '5px'}}>Know the crew members</h3>
             {
                 crewLoading ?
                     <div className="row d-flex justify-content-center" style={{height: '40vh', width: '100%'}}>

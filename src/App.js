@@ -50,9 +50,9 @@ function App() {
             </div>
           </div>
         </div>
-        <video playsInline autoPlay muted loop id="myVideo" className="for-desktop" >
+        {/* <video playsInline autoPlay muted loop id="myVideo" className="for-desktop" >
           <source src="https://wildwomenexpeditions.com/wp-content/uploads/Wild-Women-Experience_home.mp4" type="video/mp4"></source>
-        </video>
+        </video> */}
       
       </div>
       <Gallery />

@@ -12,7 +12,7 @@ function Footer() {
                     <Link to="/frequently-asked-questions">FAQs </Link>|
                     <Link to="/about-us">About Us</Link>|
                     <Link to="/our-crew">Our Crew</Link>|
-                    <Link to="#">Activity</Link>
+                    <Link to="/what-to-expect">What to Expect</Link>
                 </p>
                 <p>
                     <Link to="/admin/login">Admin Login</Link>
@@ -31,35 +31,35 @@ function Footer() {
                     <a href="#">+254 792 789 618</a>
                 </span>
             </div>
-            <div className="social-grey" style={{width:"80%",margin:"50px auto"}}>
+            <div className="social-grey" style={{width:"80%",marginTop:"30px",marginBottom: '20px', marginLeft: "auto", marginRight: 'auto'}}>
                 <ul style={{padding:"0px"}}>
                 <li>
-                    <a href="https://www.facebook.com/WildWomenExpeditions/" target="_blank">
+                    <a href="" target="_blank">
                     <i className="fab fa-facebook-f"></i>
                     </a>
                 </li>
-                                <li>
-                    <a href="https://twitter.com/wild_women" target="_blank">
+                <li>
+                    <a href="" target="_blank">
                     <i className="fab fa-twitter"></i>
                     </a>
                 </li>
-                                <li>
-                    <a href="https://www.instagram.com/wildwomenexpeditions/" target="_blank">
+                <li>
+                    <a href="" target="_blank">
                     <i className="fab fa-instagram"></i>
                     </a>
                 </li>
-                                <li>
-                    <a href="https://www.pinterest.ca/wildwomenexpeditions/" target="_blank">
+                <li>
+                    <a href="" target="_blank">
                     <i className="fab fa-pinterest-p"></i>
                     </a>
                 </li>
-                                <li>
-                    <a href="https://www.linkedin.com/company/wild-women-expeditions" target="_blank">
+                <li>
+                    <a href="" target="_blank">
                     <i className="fab fa-linkedin"></i>
                     </a>
                 </li>
-                                <li>
-                    <a className="you" href="https://www.youtube.com/c/WildWomenExpeditions" target="_blank">
+                <li>
+                    <a className="you" href="" target="_blank">
                     <i className="fab fa-youtube"></i>
                     </a>
                 </li>

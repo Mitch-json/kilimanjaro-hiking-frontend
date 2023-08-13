@@ -28,8 +28,8 @@ const images = [
 
 function Gallery() {
     return (
-        <div id="drip-ef-221589843" style={{backgroundColor: 'white'}}>
-            <h3 style={{fontSize: '40px',marginTop: '0px'}}>Gallery</h3>
+        <div id="drip-ef-221589843" className="gallery-back" style={{backgroundColor: 'white'}}>
+            <h3 style={{fontSize: '30px',marginTop: '10px', fontFamily: 'Montserrat'}}>Gallery</h3>
             
             <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} interval={3000} showStatus={false} showThumbs={true} showIndicators={false} transitionTime={1000}>
                 {

@@ -92,7 +92,7 @@ function OurCrew() {
                                                         
                                                     </div>
                                                     <div className="product-cell status-cell">
-                                                        <span style={{fontFamily: 'Journal', fontSize: "18px"}}>{crew.fullName}</span>
+                                                        <span style={{fontFamily: 'Montserrat', fontSize: "16px"}}>{crew.fullName}</span>
                                                     </div>
                                                     <div className="product-cell status-cell">
                                                         <span className="cell-label">Role:</span>

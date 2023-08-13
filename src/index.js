@@ -6,6 +6,9 @@ import './trip-details/TripDetails.css'
 import './fonts/IndonesiaMerdeka/Indonesia-Merdeka.ttf'
 import './fonts/Montserrat/Montserrat-VariableFont_wght.ttf'
 import './fonts/Journal/JOURNAL.TTF'
+import './fonts/EgyptianNights/EgyptianNights.ttf'
+import './fonts/MamakiloDecorative/MamakiloDecorative.ttf'
+import './fonts/MamakiloBlack/MamakiloBlack.ttf'
 import App from './App';
 import KilimanjaroRoutes from './KilimanjaroRoutes';
 
@@ -35,6 +38,7 @@ import ContactUs from './footer-pages/contact-us/ContactUs';
 import BookingTerms from './footer-pages/booking-terms/BookingTerms';
 import FAQ from './footer-pages/FAQs/FAQ';
 import OurCrew from './footer-pages/our-crew/OurCrew';
+import WhatToExpect from './footer-pages/what-to-expect/WhatToExpect';
 
 
 
@@ -51,6 +55,7 @@ root.render(
         <Route path='/terms-and-conditions' index element={<BookingTerms />} />
         <Route path='/frequently-asked-questions' index element={<FAQ />} />
         <Route path='/our-crew' index element={<OurCrew />} />
+        <Route path='/what-to-expect' index element={<WhatToExpect />} />
 
         <Route path='/routes/selected/northern-circuit-route' index element={<NorthernCircuitRoute />} />
         <Route path='/routes/selected/lemosho-route' index element={<LemoshoRoute />} />

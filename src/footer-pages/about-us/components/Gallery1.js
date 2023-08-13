@@ -1,5 +1,6 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
+import '../AboutUs.css'
 
 const images = [
     {
@@ -15,10 +16,8 @@ const images = [
 
 function Gallery1() {
     return (
-        <div id="drip-ef-221589843" style={{backgroundColor: 'white'}}>
-            <h3 style={{fontSize: '40px',marginTop: '0px'}}>Gallery</h3>
-            
-            <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} interval={3000} showStatus={false} showThumbs={true} showIndicators={false} transitionTime={1000}>
+        <div id="drip-ef-221589843" className="about-gallery" style={{backgroundColor: 'white'}}>
+            <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} interval={3000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
                 {
                     images.map(image => 
                         <div key={image.key} className="feature-img-wrap carousel-slide-caption-experience">

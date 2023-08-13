@@ -5,6 +5,7 @@ import "./KilimanjaroRoutes.css"
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function KilimanjaroRoutes() {
     return (
@@ -13,8 +14,13 @@ function KilimanjaroRoutes() {
                 <title>Kilimanjaro Routes</title>
             </Helmet>
             <div className="template-wrapper template-wrapper-categories">
-                <NavbarRest />
-                <div className="section main-content">
+                <Navbar navbarDark={{height: 100}} />
+                <div className="section">
+                    <div id="drip-ef-221589843" className="afr-gif-container" style={{backgroundColor: 'white'}}>
+                        <div className="feature-img-wrap afr-gif">
+                            <img src={require('./assets/afr.gif')} alt="" className="img-responsive center-block afr-gif-img"></img>
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col-xs-12">
                             <div id="map" className="map-content">
@@ -27,7 +33,7 @@ function KilimanjaroRoutes() {
                                                         <div className="col-sm-12 col-sm-12-margin-right">
                                                             <div className="search-terms">
                                                                 <div style={{paddingLeft: "15px"}}>
-                                                                    Showing <span className="font-block-style">all </span> routes for <span className="font-block-style">All</span> activites in <span className="font-block-style">Mount Kilimanjaro</span> destinations.
+                                                                    Showing <span className="font-block-style">all </span> routes in <span className="font-block-style">Mount Kilimanjaro</span>
                                                                 </div>
                                                                 <div id="ajax-load-more" className="ajax-load-more-wrap default alm-0" >
                                                                     <ul aria-live="polite" aria-atomic="true" className="alm-listing alm-ajax alm-has-transition pull-right" >

@@ -13,9 +13,24 @@
     src: local("Journal"),
      url("./fonts/Journal/JOURNAL.TTF") format("truetype");
 }
+@font-face {
+    font-family: "EgyptianNights";
+    src: local("EgyptianNights"),
+     url("./fonts/EgyptianNights/EgyptianNights.ttf") format("truetype");
+}
+@font-face {
+    font-family: "MamakiloBlack";
+    src: local("MamakiloBlack"),
+     url("./fonts/MamakiloBlack/MamakiloBlack.ttf") format("truetype");
+}
+@font-face {
+    font-family: "MamakiloDecorative";
+    src: local("MamakiloDecorative"),
+     url("./fonts/MamakiloDecorative/MamakiloDecorative.ttf") format("truetype");
+}
 
 #toggle-nav-full{
-    height: 150px !important;
+    height: 110px !important;
 }
 
 a:link {

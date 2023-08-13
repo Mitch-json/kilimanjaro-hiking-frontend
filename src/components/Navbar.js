@@ -32,9 +32,9 @@ function Navbar(props) {
             <div className="navbar-header">
               
               <Link className="navbar-brand" to="/">
-                <img src={require('../assets/logo/KILIMAJ-HIKING-LOGO.png')}
+                <img src={require('../assets/logo/afr.png')}
                   className="img-responsive" alt=
-                  "Kilimaj-hiking logo. " style={{maxWidth: '500px'}}></img>
+                  "Kilimaj-hiking logo. " style={{maxWidth: '90px'}}></img>
 
               </Link>
             </div>
