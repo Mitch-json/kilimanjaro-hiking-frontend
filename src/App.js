@@ -4,7 +4,7 @@ import './App.css';
 import BookConsultation from './components/BookConsultation';
 import Crew from './components/Crew';
 import Footer from './components/Footer';
-import Gallery from './components/Gallery';
+import GalleryH from './components/GalleryH';
 import Navbar from './components/Navbar';
 import Testimonials from './components/Testimonials';
 
@@ -55,7 +55,7 @@ function App() {
         </video> */}
       
       </div>
-      <Gallery />
+      <GalleryH />
       <BookConsultation />
       {/* <Testimonials /> */}
       <Crew />

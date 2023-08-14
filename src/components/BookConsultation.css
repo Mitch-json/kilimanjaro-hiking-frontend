@@ -9,7 +9,9 @@
         background-size: contain;
 }
 
-
+.dont-display-label{
+    display: none !important;
+}
 
 .hs-custom-style .hs-input, .hs-custom-style fieldset {
     max-width: 100%;
@@ -93,6 +95,10 @@
     outline: none !important;
     border: 0 !important;
     border-radius: 0 !important;
+    border-bottom: 2px solid black !important;
+}
+.whatsapp-input input:focus-visible {
+    outline: none !important;
     border-bottom: 2px solid black !important;
 }
 

@@ -49,3 +49,27 @@
     }
 
 }
+
+
+
+@media (max-width: 875px){
+	.grid-gallery{
+		display: none !important;
+	}
+}
+
+.grid-gallery {
+	
+	margin: 0 auto;
+	
+	display: flex;
+	flex-wrap: wrap;
+	width: 870px;
+
+}
+.grid-gallery-item { margin: 5px; max-width: 280px !important;  }
+
+.grid-gallery-item img{
+	max-width: 280px !important;
+	margin-bottom: 10px;
+}

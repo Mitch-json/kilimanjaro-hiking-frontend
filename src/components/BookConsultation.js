@@ -17,31 +17,46 @@ function BookConsultation() {
 
     const submitConsultation = (e) => {
         e.preventDefault()
-        setSubmitLoading(true)
 
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({fullName: fullName, whatsApp: whatsApp, email: email})
-        };
-        fetch(`${process.env.REACT_APP_BACKEND_URL}/clients/book-consultation`, requestOptions)
-            .then(response => response.json())
-            .then((data) => {
-                if(data.msg){
-                    setConsSuccessMessage(data.msg)
+        if(document.querySelector(".PhoneInputInput-error")){
+            document.querySelector(".invalid-phone").classList.remove("invalid-phone-error")
+            document.querySelector(".PhoneInputInput").classList.remove("PhoneInputInput-error")
+            document.querySelector(".whatsapp-label").classList.remove("dont-display-label")
+        }
+        
+        if(isValidPhoneNumber(whatsApp)){
+            setSubmitLoading(true)
+    
+            const requestOptions = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({fullName: fullName, whatsApp: whatsApp, email: email})
+            };
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/clients/book-consultation`, requestOptions)
+                .then(response => response.json())
+                .then((data) => {
+                    if(data.msg){
+                        setConsSuccessMessage(data.msg)
+                        setSubmitLoading(false)
+                    }else if(data.errorBut){
+                        setConsSuccessMessage("Online Consultation successfully booked")
+                        setSubmitLoading(false)
+                    }else if(data.err){
+                        setConsErrorMessage(data.err)
+                        setSubmitLoading(false)
+                    }
+                })
+                .catch(error =>{
+                    console.log(error)
                     setSubmitLoading(false)
-                }else if(data.errorBut){
-                    setConsSuccessMessage("Online Consultation successfully booked")
-                    setSubmitLoading(false)
-                }else if(data.err){
-                    setConsErrorMessage(data.err)
-                    setSubmitLoading(false)
-                }
-            })
-            .catch(error =>{
-                console.log(error)
-                setSubmitLoading(false)
-            })
+                })
+            
+        }else{
+            document.querySelector(".invalid-phone").classList.add("invalid-phone-error")
+            document.querySelector(".PhoneInputInput").classList.add("PhoneInputInput-error")
+            document.querySelector(".whatsapp-label").classList.add("dont-display-label")
+            document.querySelector(".PhoneInputInput").focus()
+        }
     }
 
     return (
@@ -87,10 +102,13 @@ function BookConsultation() {
                                     </div>
                                 </div>
                                 <div className="hs_lastname hs-whatsapp hs-fieldtype-text field-2 hs-form-field">
-                                    <label className="" placeholder="Enter your Last name" >
+                                    <label className="whatsapp-label" placeholder="Enter your Last name" >
                                         <span>WhatsApp No</span>
                                     </label>
-                                    <div className="input">
+                                    <div className="font-weight-normal fs-16 invalid-phone" style={{marginTop: '10px', color: 'red', fontSize: '12px', display: 'none'}}>
+                                        Invalid Phone Number
+                                    </div>
+                                    <div className="input whatsapp-input">
                                         <PhoneInput     
                                             placeholder=""
                                             value={whatsApp}

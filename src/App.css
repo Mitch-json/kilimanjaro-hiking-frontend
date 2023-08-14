@@ -21,7 +21,6 @@ div#toggle-nav-full {
   z-index: 99999;
 }
 .navbar-wrapper {
-  background-color: #00000008;
   left: 0;
   position: fixed;
   right: 0;
