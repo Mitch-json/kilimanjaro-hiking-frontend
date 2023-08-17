@@ -40,6 +40,23 @@ function App() {
                         FIND YOUR ADVENTURE
                       </Link>
                     </div>
+                    
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="home-menu-wrap">
+              <div className="container">
+                <div className="row">
+                  <div className="col-sm-12 text-center">
+                    <div className="find-new">
+                      
+                      <a href="#book-consultation">
+                        Book Free Online Consultation
+                      </a>
+                    </div>
+                    
                   
                   </div>
                 </div>
@@ -56,7 +73,9 @@ function App() {
       
       </div>
       <GalleryH />
-      <BookConsultation />
+      <div id="book-consultation">
+        <BookConsultation />
+      </div>
       {/* <Testimonials /> */}
       <Crew />
       <Footer />
