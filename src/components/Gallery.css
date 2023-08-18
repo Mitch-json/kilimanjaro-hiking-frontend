@@ -30,9 +30,7 @@
     }
 }
 
-.gallery-back{
-    background-image: url('../assets/tall.jpg') !important;
-}
+
 @media (min-width:400px){
     .gallery-back{
         background-repeat: no-repeat;

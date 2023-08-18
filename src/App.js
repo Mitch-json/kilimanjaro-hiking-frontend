@@ -76,8 +76,7 @@ function App() {
       <div id="book-consultation">
         <BookConsultation />
       </div>
-      {/* <Testimonials /> */}
-      <Crew />
+      <Testimonials />
       <Footer />
     </div>
     

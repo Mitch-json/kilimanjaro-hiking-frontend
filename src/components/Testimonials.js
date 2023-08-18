@@ -5,8 +5,8 @@ import { Carousel } from 'react-responsive-carousel';
 
 function Testimonials() {
     return (
-        <div id="drip-ef-221589843">
-            <h3 style={{fontSize: '40px',marginTop: '0px'}}>TESTIMONIALS</h3>
+        <div id="drip-ef-221589843" className="reviews-back">
+            <h2 style={{marginTop: '0px', letterSpacing: '3px'}}>Client Testimonials</h2>
             
             <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} interval={3000} showStatus={false} showIndicators={false} transitionTime={500}>
                 <div className="carousel-slide-caption">

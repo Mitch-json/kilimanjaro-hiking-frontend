@@ -188,7 +188,7 @@ function NorthernCircuitRoute() {
                                                             Starting At
                                                         </div>
                                                         <div className="booking-bottom padding-top">
-                                                            <span>$4,495</span>
+                                                            <span>$2,500</span>
                                                         </div>
                                                     </div>
 
@@ -234,19 +234,16 @@ function NorthernCircuitRoute() {
                                                 <span style={{fontWeight: "400"}}>All transfers (to airport, hotels)</span>
                                             </li>
                                             <li style={{fontWeight: "400"}} aria-level="1">
-                                                <span style={{fontWeight: "400"}}>6 nights shared accommodation (4 nights yurts, 2 nights hotel)</span>
+                                                <span style={{fontWeight: "400"}}>Park fees and campaign fees</span>
                                             </li>
                                             <li style={{fontWeight: "400"}} aria-level="1">
-                                                <span style={{fontWeight: "400"}}>Awesome medically-trained naturalist and female-identifying guides</span>
+                                                <span style={{fontWeight: "400"}}>Crew wages</span>
                                             </li>
                                             <li style={{fontWeight: "400"}} aria-level="1">
-                                                <span style={{fontWeight: "400"}}>All park entry fees</span>
+                                                <span style={{fontWeight: "400"}}>Meals on full board</span>
                                             </li>
                                             <li style={{fontWeight: "400"}} aria-level="1">
-                                                <span style={{fontWeight: "400"}}>All activities and required equipment (rafting, canyoneering)</span>
-                                            </li>
-                                            <li style={{fontWeight: "400"}} aria-level="1">
-                                                <span style={{fontWeight: "400"}}>All decadent meals from riverside picnics to downtown Moab restos</span>
+                                                <span style={{fontWeight: "400"}}>Rescue fees</span>
                                             </li>
                                             <li style={{fontWeight: "400"}} aria-level="1">
                                                 <span style={{fontWeight: "400"}}>The time of your life!</span>
