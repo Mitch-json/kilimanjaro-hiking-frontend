@@ -18,7 +18,7 @@ function NorthernCircuitDetails() {
                     <article id="ac-1" className="ac-text">
                         <ul>
                             <li>
-                                <a href="https://wildwomenexpeditions.com/wp-content/uploads/Tanzania-Safari-Pre-Trip-Preparations-Checklist.pdf" target="_blank" rel="noopener">Tanzania Safari – Pre-Trip Prep Checklist</a>
+                                <a href="" target="_blank" rel="noopener">Tanzania Safari – Pre-Trip Prep Checklist</a>
                             </li>
                         </ul>
                     </article>
@@ -28,7 +28,7 @@ function NorthernCircuitDetails() {
                     <article id="ac-2" className="ac-text">
                         <ul>
                             <li>
-                                <a href="https://wildwomenexpeditions.com/wp-content/uploads/Tanzania-Safari-Pre-Trip-Preparations-Checklist.pdf" target="_blank" rel="noopener">Tanzania Safari – Packing Checklist</a>
+                                <a href="" target="_blank" rel="noopener">Tanzania Safari – Packing Checklist</a>
                             </li>
                         </ul>
                     </article>
