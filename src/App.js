@@ -39,6 +39,9 @@ function App() {
                       <Link to="/routes">
                         FIND YOUR ADVENTURE
                       </Link>
+                      <a className="side-by-side-btn" href="#book-consultation" style={{marginLeft: '10px'}}>
+                        Book Free Online Consultation
+                      </a>
                     </div>
                     
                   
@@ -46,7 +49,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="home-menu-wrap">
+            <div className="home-menu-wrap top-down-btn">
               <div className="container">
                 <div className="row">
                   <div className="col-sm-12 text-center">

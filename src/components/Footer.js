@@ -22,14 +22,18 @@ function Footer() {
                 <p>
                     <Link to="/contact-us"><u>Contact Us</u></Link>
                 </p>
-                <span>
-                    <i className="fas fa-envelope"></i> 
-                    <a href="mailto:adventure@wildwomenexpeditions.com">kilimajhiking@gmail.com</a>
-                </span>
-                <span>
-                    <i className="fas fa-phone"></i> 
-                    <a href="#">+254 792 789 618</a>
-                </span>
+                <p>
+                    <span>
+                        <i className="fas fa-envelope"></i> 
+                        <a href="mailto:info@kilimanjaroawaits.com">info@kilimanjaroawaits.com</a>
+                    </span>
+                </p>
+                <p>
+                    <span>
+                        <i className="fas fa-phone"></i> 
+                        <a href="#">+254 792 789 618</a>
+                    </span>
+                </p>
             </div>
             <div className="social-grey" style={{width:"80%",marginTop:"30px",marginBottom: '20px', marginLeft: "auto", marginRight: 'auto'}}>
                 <ul style={{padding:"0px"}}>

@@ -37,7 +37,7 @@ function ContactUs() {
 
 
                                 <h2>Contact Details</h2>
-                                <p>We can be reached by phone at: 1-888-993-1222.  Give us a call! We’re always happy to chat</p>
+                                <p>We can be reached by phone at: +254 792 789 618.  Give us a call! We’re always happy to chat</p>
                                 <p>
                                     Office hours:
                                     <br></br>
@@ -50,12 +50,12 @@ function ContactUs() {
                                 <p>
                                     If you have any general enquiries or would like to book, you can email us at
                                     <br></br>
-                                    kilimajhiking@gmail.com
+                                    info@kilimanjaroawaits.com
                                 </p>
                                 <p>
                                     If you have questions about your upcoming trip, you can email us at
                                     <br></br>
-                                    kilimajhiking@gmail.com
+                                    info@kilimanjaroawaits.com
                                 </p>
                             </div>
                         </div>
