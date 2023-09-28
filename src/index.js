@@ -40,6 +40,7 @@ import FAQ from './footer-pages/FAQs/FAQ';
 import OurCrew from './footer-pages/our-crew/OurCrew';
 import WhatToExpect from './footer-pages/what-to-expect/WhatToExpect';
 import ScrollToTop from './ScrollToTop';
+import Tipping from './footer-pages/tipping/Tipping';
 
 
 
@@ -58,6 +59,7 @@ root.render(
           <Route path='/frequently-asked-questions' index element={<FAQ />} />
           <Route path='/our-crew' index element={<OurCrew />} />
           <Route path='/what-to-expect' index element={<WhatToExpect />} />
+          <Route path='/tipping' index element={<Tipping />} />
 
           <Route path='/routes/selected/northern-circuit-route' index element={<NorthernCircuitRoute />} />
           <Route path='/routes/selected/lemosho-route' index element={<LemoshoRoute />} />

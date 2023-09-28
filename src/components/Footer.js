@@ -12,7 +12,8 @@ function Footer() {
                     <Link to="/frequently-asked-questions">FAQs </Link>|
                     <Link to="/about-us">About Us</Link>|
                     <Link to="/our-crew">Our Crew</Link>|
-                    <Link to="/what-to-expect">What to Expect</Link>
+                    <Link to="/what-to-expect">What to Expect</Link>|
+                    <Link to="/tipping">Tips for the Crew</Link>
                 </p>
                 <p>
                     <Link to="/admin/login">Admin Login</Link>
