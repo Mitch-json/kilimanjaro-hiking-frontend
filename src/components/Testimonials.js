@@ -10,19 +10,19 @@ function Testimonials() {
             
             <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} interval={3000} showStatus={false} showIndicators={false} transitionTime={500}>
                 <div className="carousel-slide-caption">
-                    <h3>The Kilimanjaro experience was nothing short of magical. The camaraderie among fellow hikers, the knowledgeable guides, and the stunning vistas made this journey unforgettable. Truly a bucket-list item for any nature lover!</h3>
+                    <h3>What an AMAZING experience. It still feels a bit surreal, but I have pictures so I know it happened. Physically and Mentally Challenging but what a reward! I felt so cared for from the entire team (Guides, Porters, Chef, etc.) Our safety and comfort was their main concern. The food was delicious (don't take too many snacks, you won't eat them), the soups we had every night I'm hoping I can get the recipe for, that's how good they were. Again, just an Amazing experience</h3>
                     <div className="testimonial-source">
-                        <h3><strong>Mark</strong></h3>
+                        <h3><strong>Malik, India</strong></h3>
                     </div>
                 </div>
                 <div className="carousel-slide-caption">
-                    <h3>Hiking Kilimanjaro was a soul-stirring experience. The sheer determination and encouragement from our guides and fellow hikers pushed us to new heights, both physically and mentally. The sunrise from the summit was an indescribable reward.</h3>
+                    <h3>Kilimanjaro is a great first peak to experience high altitude. The huts and toilets are very clean and well maintained. Having guides and Porter assistance makes it a great first mountain to climb to experience high altitude. Apart from reaching the highest point in Africa, it was great to meet new people and share this journey and make everlasting friendships.</h3>
                     <div className="testimonial-source">
-                        <h3><strong>Arnold</strong></h3>
+                        <h3><strong>Marj, USA</strong></h3>
                     </div>
                 </div>
                 <div className="carousel-slide-caption">
-                    <h3>Kilimanjaro was a true test of perseverance and a triumph of the human spirit. The sense of accomplishment upon reaching the Uhuru Peak was unlike anything else. The memories and friendships forged during this journey will last a lifetime.</h3>
+                    <h3>Climbing Mount Kilimanjaro in 5 days was an awesome experience! The chefs prepared great food, even vegetarian options! The guides were super strong and made the climb easier. The awesome views and the good feeling of finishing made every step fun. Nature's beauty and the friends I made during the journey are memories I'll always keep. It was a great experience, and I'd totally do it again with the same people!</h3>
                     <div className="testimonial-source">
                         <h3><strong>Henry</strong></h3>
                     </div>
