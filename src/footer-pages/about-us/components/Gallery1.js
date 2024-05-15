@@ -5,11 +5,15 @@ import '../AboutUs.css'
 const images = [
     {
         key: '1',
-        link: `${require('../../../assets/about-us/gallery-1/1.jpg')}`
+        link: `https://res.cloudinary.com/dwxzlruyd/image/upload/v1712344644/kilimaj-hiking/assets/about-us/gallery-1/1_fslh5n.jpg`
     },
     {
         key: '2',
-        link: `${require('../../../assets/about-us/gallery-1/2.jpg')}`
+        link: `https://res.cloudinary.com/dwxzlruyd/image/upload/v1712344639/kilimaj-hiking/assets/about-us/gallery-1/2_v3xz2y.jpg`
+    },
+    {
+        key: '3',
+        link: `https://res.cloudinary.com/dwxzlruyd/image/upload/v1712344640/kilimaj-hiking/assets/about-us/gallery-1/3_hapjjk.jpg`
     },
     
 ]
@@ -22,9 +26,6 @@ function Gallery1() {
                     images.map(image => 
                         <div key={image.key} className="feature-img-wrap carousel-slide-caption-experience">
                             <img src={image.link} alt="" className="img-responsive center-block routes-images experience-images"></img>
-                            <div className="border-div experience-border-div no-pad">
-                                <img src={require('../../../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
-                            </div>
                         </div>
                     
                     )

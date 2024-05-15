@@ -9,16 +9,10 @@ function NorthernCircuitExperience() {
                     
                     <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690572384/kilimaj-hiking/experience/experience-northern-circuit_ywptbu.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
-                        <div className="border-div experience-border-div no-pad">
-                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
-                        </div>
                     </div>
-                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                    {/* <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690675543/kilimaj-hiking/northern-circuit/cover/northern-circuit-map_qvdybx.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
-                        <div className="border-div experience-border-div no-pad">
-                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
-                        </div>
-                    </div>
+                    </div> */}
                 </Carousel>
                 <h2 className="trips_heading">About the Experience</h2>
                 <div>

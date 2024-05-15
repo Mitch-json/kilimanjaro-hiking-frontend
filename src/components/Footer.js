@@ -1,79 +1,51 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import styles from './Navbar.module.css';
 function Footer() {
     return (
-        <div className="footer-featured">
-            <div className="container">
-            <div id="menu-footer-menu-updated">
-                <p>
-                    <Link to="/terms-and-conditions">Booking Terms </Link>|   
-                    <Link to="/contact-us">Contact Us</Link>|  
-                    <Link to="/frequently-asked-questions">FAQs </Link>|
-                    <Link to="/about-us">About Us</Link>|
-                    <Link to="/our-crew">Our Crew</Link>|
-                    <Link to="/what-to-expect">What to Expect</Link>|
-                    <Link to="/tipping">Tips for the Crew</Link>
-                </p>
-                <p>
-                    <Link to="/admin/login">Admin Login</Link>
-                </p>
+        <footer className="light">
+            <div className={styles.container}>
+                <div className={styles.row}>
+                    <div className="col-lg-4">
+                        <h3 className={styles.footerH3}>Afya Athletic</h3>
+                        <p>Somewhere between the bottom of the climb and the summit is the answer to the mystery why we climb.</p>
+                    </div>
+                    <div className="col-lg-4">
+                        <h3 className={styles.footerH3}>Contacts</h3>
+                        <ul className="icon-list icon-line">
+                            <li>Nairobi, Kenya</li>
+                            <li> <i className="fas fa-envelope"></i> info@kilimanjaroawaits.com</li>
+                            <li><i className="fas fa-phone"></i> +254 792 789 618</li>
+                        </ul>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="icon-links icon-social icon-links-grid social-colors">
+                            <a className="facebook"><i className="fab fa-facebook-f"></i></a>
+                            <a className="twitter"><i className="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/kilimanjaro.awaits/" className="instagram"><i className="fab fa-instagram"></i></a>
+                            <a className="google"><i className="icon-google"></i></a>
+                        </div>
+                        <hr className="space-sm" />
+                        <p>follow us on the social channels to stay tuned.</p>
+                    </div>
+                </div>
             </div>
-            <div className="subtle-footer">
-                <p>
-                    <Link to="/contact-us"><u>Contact Us</u></Link>
-                </p>
-                <p>
+            <div className="footer-bar">
+                <div className={styles.container}>
                     <span>
-                        <i className="fas fa-envelope"></i> 
-                        <a href="mailto:info@kilimanjaroawaits.com">info@kilimanjaroawaits.com</a>
+                        <Link to="/contact-us">Contact Us</Link> | 
+                        <Link to="/terms-and-conditions">Booking Terms </Link> | 
+                        <Link to="/frequently-asked-questions">FAQs </Link>|
+                        <Link to="/about-us">About Us</Link> | 
+                        <Link to="/our-crew">Our Crew</Link> | 
+                        <Link to="/what-to-expect">What to Expect</Link> | 
+                        <Link to="/tipping">Tips for the Crew</Link>
                     </span>
-                </p>
-                <p>
-                    <span>
-                        <i className="fas fa-phone"></i> 
-                        <a href="#">+254 792 789 618</a>
-                    </span>
-                </p>
+                </div>
             </div>
-            <div className="social-grey" style={{width:"80%",marginTop:"30px",marginBottom: '20px', marginLeft: "auto", marginRight: 'auto'}}>
-                <ul style={{padding:"0px"}}>
-                <li>
-                    <a href="" target="_blank">
-                    <i className="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">
-                    <i className="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/kilimanjaro.awaits/" target="_blank">
-                    <i className="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">
-                    <i className="fab fa-pinterest-p"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">
-                    <i className="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a className="you" href="" target="_blank">
-                    <i className="fab fa-youtube"></i>
-                    </a>
-                </li>
-                </ul>
-            </div>
-
-            </div>
-        </div>
-    
+            
+        </footer>
+            
     )
 }
 

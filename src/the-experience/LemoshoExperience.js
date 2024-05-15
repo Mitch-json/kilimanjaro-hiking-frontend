@@ -10,16 +10,12 @@ function LemoshoExperience() {
                     
                     <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690571822/kilimaj-hiking/experience/experience-lemosho_lwgfme.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
-                        <div className="border-div experience-border-div no-pad">
-                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
-                        </div>
+                        
                     </div>
-                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                    {/* <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690674013/kilimaj-hiking/lemosho/cover/lemosho-map_ulof3b.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
-                        <div className="border-div experience-border-div no-pad">
-                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
-                        </div>
-                    </div>
+                        
+                    </div> */}
                 </Carousel>
                 <h2 className="trips_heading">About the Experience</h2>
                 <div>

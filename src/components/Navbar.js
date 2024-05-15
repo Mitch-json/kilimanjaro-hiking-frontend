@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import './Navbar.css'
+
+import styles from './Navbar.module.css';
+import { useState } from 'react';
 
 function Navbar(props) {
+    const [dropdownActive, setDropdownActive] = useState(false);
     useEffect(() => {
       if (props.navbarDark) {
           window.addEventListener("scroll", makeNavbarDark);
@@ -19,35 +22,87 @@ function Navbar(props) {
         const windowsScrollTop = window.pageYOffset;
         if (windowsScrollTop > navbarDark.height) {
             // document.body.getElementsByTagName("nav")[0].classList.remove(classes[color]);
-            document.body.querySelector(`.nav-selector`).classList.add('dark-nav')
-          } else {
-            document.body.querySelector(`.nav-selector`).classList.remove('dark-nav')
+            document.body.querySelector(`.menu-classic`).classList.add('scroll-menu')
+        } else {
+            document.body.querySelector(`.menu-classic`).classList.remove('scroll-menu')
             
         }
     };
-    return (
-      <div id="toggle-nav-full" className="navbar-wrapper nav-selector" data-spy="affix" data-offset-top="100" data-offset-bottom="100">
-        <div className="container">
-          <nav className="navbar navbar-inverse navbar-static-top">
-            <div className="navbar-header">
-              
-              <Link className="navbar-brand" to="/">
-                <img src={require('../assets/logo/afr.png')}
-                  className="img-responsive nav-logo-img" alt=
-                  "Kilimaj-hiking logo. " ></img>
 
-              </Link>
-              <Link className="navbar-brand navbar-brand-2" to="/">
-                <img src={require('../assets/logo/afr3.png')}
-                  className="img-responsive nav-logo-img-2" alt=
-                  "Kilimaj-hiking logo. " ></img>
-
-              </Link>
-            </div>
+    const displayMenuDropdown = () => {
+        if (dropdownActive) {
+            document.body.querySelector(`.menu-classic`).classList.remove('active')
+            document.body.querySelector(`.menu-cnt`).classList.remove('activeDrop')
+        } else {
+            document.body.querySelector(`.menu-classic`).classList.add('active')
+            document.body.querySelector(`.menu-cnt`).classList.add('activeDrop')
             
-          </nav>
-        </div>
-      </div>
+        }
+        setDropdownActive(!dropdownActive)
+    }
+    return (
+      <nav className={`${props.navbarDark.light? 'light': ''} menu-classic align-right ${props.navbarDark.transparent? 'menu-transparent': ''}  menu-fixed`} data-menu-anima="fade-in">
+          <div className={styles.container} style={{height: '100%'}}>
+              <div className='menu-brand'>
+                    <Link className='menu-brand-a' to="/">
+                        <img className={[styles['logo-default'], styles['scroll-hide']].join(' ')} src={require('../NewHomePage/media/afr.png')} alt="logo" />
+                        <img className={[styles['logo-retina'], styles['scroll-hide']].join(' ')} src={require('../NewHomePage/media/afr.png')} alt="logo" />
+                        <img className={[styles['logo-default'], styles['scroll-show']].join(' ')} src={require('../NewHomePage/media/afr.png')} alt="logo" />
+                        <img className={[styles['logo-retina'], styles['scroll-show']].join(' ')} src={require('../NewHomePage/media/afr.png')} alt="logo" />
+                    </Link>
+              </div>
+              <i onClick={displayMenuDropdown} className='menu-btn'></i>
+              
+              <div className='menu-cnt' >
+                  <ul id="main-menu">
+                      <li className={styles.dropdown}>
+                        <Link to="/">
+                            Home
+                        </Link>
+                          
+                      </li>
+                      <li className={styles.dropdown}>
+                        <Link to="/routes?loc=all">
+                            Treks
+                        </Link>
+                        <ul>
+                            <li>
+                                <Link to="/routes?loc=all">
+                                    All Treks
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/routes?loc=kenya">
+                                    Mt. Kenya
+                                </Link>
+                            </li>
+                            {/* <li>
+                                <a href="treks-single.html">
+                                    Mt. Longonot
+                                </a>
+                            </li> */}
+                            <li>
+                                <Link to="/routes?loc=kilimanjaro">
+                                    Mt. Kilimanjaro
+                                </Link>
+                            </li>
+                        </ul>
+                      </li>
+                      {/* <li>
+                          <a href="blog.html">Blog</a>
+                      </li> */}
+                      <li>
+                        <Link to="/contact-us">
+                            Contact Us
+                        </Link>
+                      </li>
+                  </ul>
+                  <div className={ styles['menu-right']}>
+                      
+                  </div>
+              </div>
+          </div>
+      </nav>
     )
 }
 

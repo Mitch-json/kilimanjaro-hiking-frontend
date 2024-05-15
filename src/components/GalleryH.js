@@ -1,68 +1,119 @@
 import React from 'react'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import './Gallery.css'
-import { Carousel } from 'react-responsive-carousel';
-import { Gallery } from "react-grid-gallery";
+import { Link } from 'react-router-dom';
 
-const images = [
+const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 556 },
+      items: 2,
+      slidesToSlide: 2 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 556, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
+
+  const sliderImageUrl = [
+    //First image url
     {
-        key: '1',
-        link: `${require('../assets/gallery/1.jpg')}`
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/1-BW.jpg",
+      trip: 'Mt. Kenya',
+      key: 1,
     },
     {
-        key: '2',
-        link: `${require('../assets/gallery/2.jpg')}`
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/2-BW.jpg",
+      trip: 'Mt. Kilimanjaro',
+      key: 2,
+    },
+    //Second image url
+    {
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/3-BW.jpg",
+      trip: 'Mt. Longonot',
+      key: 3,
+    },
+    //Third image url
+    {
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/4-BW.jpg",
+      trip: 'Mt. Kilimanjaro',
+      key: 4,
     },
     {
-        key: '3',
-        link: `${require('../assets/gallery/3.jpg')}`
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/5-BW.jpg",
+      trip: 'Mt. Longonot',
+      key: 5,
     },
     {
-        key: '4',
-        link: `${require('../assets/gallery/4.jpg')}`
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/6-BW.jpg",
+      trip: 'Mt. Kenya',
+      key: 6,
     },
     {
-        key: '5',
-        link: `${require('../assets/gallery/5.jpg')}`
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/7-BW.jpg",
+      trip: 'Mt. Kilimanjaro',
+      key: 7,
     },
-    
-]
+    {
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/8-BW.jpg",
+      trip: 'Mt. Kenya',
+      key: 8,
+    },
+    {
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/9-BW.jpg",
+      trip: 'Mt. Kenya',
+      key: 9,
+    },
+    {
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/10-BW.jpg",
+      trip: 'Mt. Longonot',
+      key: 10,
+    },
+    {
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/11-BW.jpg",
+      trip: 'Mt. Kenya',
+      key: 11,
+    },
+    {
+      url: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1714774477/kilimaj-hiking/Home-Treks-Gallery-Slider/12-BW.jpg",
+      trip: 'Mt. Kenya',
+      key: 12,
+    },
+  ];
+
+  
 
 function GalleryH() {
     return (
-        <div id="drip-ef-221589843" className="gallery-back" style={{backgroundColor: 'white'}}>
-            <h3 style={{fontSize: '30px',marginTop: '10px', fontFamily: 'Montserrat'}}>Gallery</h3>
-            
-            <Carousel autoPlay={true} swipeable={false} infiniteLoop={true} interval={3000} showStatus={false} showThumbs={false} showIndicators={false} transitionTime={1000}>
-                {
-                    images.map(image => 
-                        <div key={image.key} className="feature-img-wrap carousel-slide-caption-gallery">
-                            <img src={image.link} alt="" className="img-responsive center-block routes-images gallery-images"></img>
-                            <div className="border-div gallery-border-div no-pad">
-                                <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block gallery-images"></img>
-                            </div>
-                        </div>
-                    
-                    )
-                }
-                
+        <div style={{borderTop: "1px solid"}} className="parent">
+            <Carousel
+                responsive={responsive}
+                autoPlay={true}
+                swipeable={true}
+                draggable={true}
+                showDots={true}
+                infinite={true}
+                partialVisible={false}
+                dotListClass="custom-dot-list-style"
+            >
+                {sliderImageUrl.map((imageUrl, index) => {
+                return (
+                    <div className="slider" key={index}>
+                      <Link className={`img-box home-parallax-${imageUrl.key} home-para-slider lightbox home-slider img-box-caption`} style={{boxShadow: "0 20px 40px -12px rgb(0 0 0 / 51%)",content: " ", width: "100%", height: "100%",background: `linear-gradient(90deg, rgb(24 24 24) 0px, rgb(24 24 24 / 40%) 0px, rgba(24, 24, 24, 0) 100%), url(${imageUrl.url})`}} to={imageUrl.url} data-lightbox-anima="fade-left">
+                          <img style={{zIndex: "-233"}} src={imageUrl.url} alt="movie" />
+                          <span>{imageUrl.trip}</span>
+                      </Link>
+                    </div>
+                );
+                })}
             </Carousel>
-            <div className="grid-gallery">                                                    
-                <div class="grid-gallery-item">
-                    <img src={require('../assets/gallery/7.jpg')} alt="Image" />
-                    <img src={require('../assets/gallery/6.jpg')} alt="Image" />
-                </div>
-                <div className="grid-gallery-item">
-                    <img src={require('../assets/gallery/8.jpg')} alt="Image" />
-                    <img src={require('../assets/gallery/11.jpg')} alt="Image" />
-                    <img src={require('../assets/gallery/12.jpg')} alt="Image" />
-                </div>
-                <div className="grid-gallery-item">
-                    <img src={require('../assets/gallery/9.jpg')} alt="Image" />
-                    <img src={require('../assets/gallery/10.jpg')} alt="Image" />
-                </div>
-                  
-            </div> 
-            
         </div>
     )
 }

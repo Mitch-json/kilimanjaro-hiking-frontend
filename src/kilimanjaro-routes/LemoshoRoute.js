@@ -3,10 +3,11 @@ import { Helmet } from 'react-helmet'
 import { Oval } from 'react-loader-spinner'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import NavbarRest from '../components/NavbarRest'
 import LemoshoItinerary from '../full-itinerary/LemoshoItinerary'
 import LemoshoExperience from '../the-experience/LemoshoExperience'
 import LemoshoDetails from '../trip-details/LemoshoDetails'
+import styles from './SelectedRoutes.module.css';
 
 function LemoshoRoute() {
     const [visibleCol, setVisibleCol] = useState("experience")
@@ -55,54 +56,38 @@ function LemoshoRoute() {
         e.preventDefault()
     }
     return (
-        <div>
+        <body>
             <Helmet>
                 <title>Lemosho Route</title>
             </Helmet>
-            <div className="template-wrapper template-wrapper-single-trip single-trips">
-                <Navbar navbarDark={{height: 100}} />
-                <div className="jumbotron-wrapper selected-route-jumbotron" style={{backgroundImage: `url('https://res.cloudinary.com/dwxzlruyd/image/upload/v1690664099/kilimaj-hiking/lemosho/cover/20220531_095828_rezemk.jpg')`}}>
-                    <div className="jumbotron jumbotron-wrapper-inner jumbotron-wrapper-inner-2">
-                        <div className="inner-content text-center">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-sm-12">
-                                        <h1 className="jumbotron-h1">
-                                            Lemosho Route						
-                                        </h1>
-                                        <h2 className="subheading jumbotron-subheading-selected-route text-uppercase">
-                                            Mount Kilimanjaro
-                                        </h2>
-                                            
-                                    </div>
-                                </div>
+            <NavbarRest headerProps={{parallaxCaption: 'Mt Kilimanjaro',parallaxTitle: 'Lemosho',parallaxImg: "https://res.cloudinary.com/dwxzlruyd/image/upload/v1690664099/kilimaj-hiking/lemosho/cover/20220531_095828_rezemk.jpg"}} />
+            <main>
+                <section className="section-base section-color">
+                    <div className={styles.container}>
+                        <div className="maso-list gap-30" data-columns="3" data-columns-lg="2" data-columns-sm="1">
+                            <div className="menu-inner">
+                                <div><i className="menu-btn"></i><span>Menu</span></div>
+                                <ul>
+                                    {/* <li className="active"><a data-filter="maso-item" href="#">All</a></li> */}
+                                    
+                                    <li id="experience" >
+                                        <a onClick={(e)=> changeColumn('experience')} >The Experience</a>
+                                    </li>
+                                    <li id="itinerary">
+                                        <a onClick={(e)=> changeColumn('itinerary')} >Full Itinerary</a>
+                                    </li>
+                                    <li id="details" >
+                                        <a onClick={(e)=> changeColumn('details')} >Trip Details</a>
+                                    </li>
+                                    <li id="book" >
+                                        <a onClick={(e)=> changeColumn('book')} >Book Now</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>    
-                    </div>
-                </div>
-                <div className="section main-content">
-                    <div className="container">
-                        <div className="section-inner">
-                            <ul className="nav nav-tabs font-block-style" role="tablist">
-                                <li id="experience" >
-                                    <a onClick={(e)=> changeColumn('experience')} >The Experience</a>
-                                </li>
-                                <li id="itinerary">
-                                    <a onClick={(e)=> changeColumn('itinerary')} >Full Itinerary</a>
-                                </li>
-                                <li id="details" >
-                                    <a onClick={(e)=> changeColumn('details')} >Trip Details</a>
-                                </li>
-                                <li id="book" >
-                                    <a onClick={(e)=> changeColumn('book')} >Book Now</a>
-                                </li>
-                                {/* <li role="hotlist" className="hotlist-trip" id="hotlist-trip">
-                                    <a>Join Hotlist</a>
-                                </li>            */}
-                            </ul>
                         </div>
-                        <div>
-                            <div className="col-sm-7" style={{marginBottom: "40px"}}>
+                        <hr className="space" />
+                        <div className={styles.row}>
+                            <div className="col-lg-6">
                                 {
                                     visibleCol === 'experience' ?
                                         <LemoshoExperience />
@@ -115,9 +100,36 @@ function LemoshoRoute() {
                                             :
                                                 <></>
                                 }
+                                
                             </div>
-                            <div className="col-sm-5">
-                                <div className="sidebar-wrap">
+                            <div className="col-lg-6">
+                                {/* <div className="cnt-box cnt-box-side">
+                                    <a href="#" className="img-box">
+                                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1692034739/nffjr7eggqjg7dhrimmx.jpg" alt="" style={{maxWidth: '166px', width: '100%', marginLeft: '-6px'}}/>
+                                    </a>
+                                    <div className="caption">
+                                        <h2>Mountain guide</h2>
+                                        <span className="extra-field">Amsi Khary</span>
+                                        
+                                    </div>
+                                </div>
+                                <hr className="space-sm" />
+                                <table className="table table-grid table-border align-left text-bold table-10">
+                                    <tbody>
+                                        <tr>
+                                            <td>Nationality<p>Kenyan</p></td>
+                                            <td>Languages<p>English</p></td>
+                                            <td>
+
+                                                <div className="icon-links icon-social icon-links-grid social-colors">
+                                                    <a className="facebook"><i className="icon-facebook"></i></a>
+                                                    <a className="twitter"><i className="icon-twitter"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table> */}
+                                <div className="sidebar-wrap" style={{marginTop: '30px'}}>
                                     <div className="booking-details-panel font-block-style">
                                         <ul className="list-group" style={{marginBottom:"0px", marginTop:"0px"}}>
                                             <li className="list-group-item text-uppercase single-trip-dates new">
@@ -166,7 +178,7 @@ function LemoshoRoute() {
                                                                 <div className="find-new-2" style={{paddingTop: '20px'}}>
                                                                     {
                                                                         selectedDate?
-                                                                            <Link className="book-now" style={{backgroundColor: '#ffffff', borderColor: '#ffffff', fontWeight: 'bold'}} to={`/book-now?route=lemosho&selected_date=${selectedDate}`}>
+                                                                            <Link className="book-now" style={{backgroundColor: '#ffffff', borderColor: '#ffffff', fontWeight: 'bold'}} to={`/book-now?route=machame&selected_date=${selectedDate}`}>
                                                                                 Book Now
                                                                             </Link>
                                                                         :
@@ -225,7 +237,7 @@ function LemoshoRoute() {
                                         </ul>
                                     </div>
                                     <div className="well well-inverse new-back" style={{backgroundColor: "#1e1e1e", borderTop: "6px solid white"}}>
-                                        <h3 className="text-uppercase font-block-style" style={{textAlign: "left", fontSize: "13px", fontFamily: "Montserrat-Light, Montserrat ", fontWeight: "400", color: "white", letterSpacing: "2px", marginLeft: "38px"}}>
+                                        <h3 className="text-uppercase font-block-style" style={{textAlign: "left", fontSize: "13px", fontFamily: "Montserrat-Light, Montserrat ", fontWeight: "400", color: "rgba(255, 255, 255, 0.5)", letterSpacing: "2px", marginLeft: "38px"}}>
                                             What's Included
                                         </h3>
                                         <ul>
@@ -257,14 +269,16 @@ function LemoshoRoute() {
                                         </ul>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-                        
                     </div>
-                </div>
-                <Footer />
-            </div>
-        </div>
+                </section>
+                
+                
+            </main>
+            <Footer />
+        </body>
     )
 }
 

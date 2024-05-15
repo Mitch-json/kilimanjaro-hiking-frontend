@@ -9,16 +9,10 @@ function UmbweExperience() {
                     
                     <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690572728/kilimaj-hiking/experience/experience-umbwe_wixrm3.jpg" alt="" className="img-responsive center-block routes-images experience-images"></img>
-                        <div className="border-div experience-border-div no-pad">
-                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
-                        </div>
                     </div>
-                    <div className="feature-img-wrap carousel-slide-caption-experience">
+                    {/* <div className="feature-img-wrap carousel-slide-caption-experience">
                         <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690676128/kilimaj-hiking/umbwe/cover/umbwe-map_bgntlz.png" alt="" className="img-responsive center-block routes-images experience-images"></img>
-                        <div className="border-div experience-border-div no-pad">
-                            <img src={require('../assets/wb.png')} alt="..." className="img-responsive center-block experience-images"></img>
-                        </div>
-                    </div>
+                    </div> */}
                 </Carousel>
                 <h2 className="trips_heading">About the Experience</h2>
                 <div>

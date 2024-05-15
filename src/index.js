@@ -10,7 +10,7 @@ import './fonts/EgyptianNights/EgyptianNights.ttf'
 import './fonts/MamakiloDecorative/MamakiloDecorative.ttf'
 import './fonts/MamakiloBlack/MamakiloBlack.ttf'
 import App from './App';
-import KilimanjaroRoutes from './KilimanjaroRoutes';
+import AllRoutes from './AllRoutes';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
@@ -41,6 +41,9 @@ import OurCrew from './footer-pages/our-crew/OurCrew';
 import WhatToExpect from './footer-pages/what-to-expect/WhatToExpect';
 import ScrollToTop from './ScrollToTop';
 import Tipping from './footer-pages/tipping/Tipping';
+import ChogoriaRoute from './kenya-routes/ChogoriaRoute';
+import NaroMoruRoute from './kenya-routes/NaroMoruRoute';
+import SirimonRoute from './kenya-routes/SirimonRoute';
 
 
 
@@ -52,7 +55,7 @@ root.render(
         <Routes>
           <Route path='/' index element={<App />} />
 
-          <Route path='/routes' index element={<KilimanjaroRoutes />} />
+          <Route path='/routes' index element={<AllRoutes />} />
           <Route path='/about-us' index element={<AboutUs />} />
           <Route path='/contact-us' index element={<ContactUs />} />
           <Route path='/terms-and-conditions' index element={<BookingTerms />} />
@@ -68,6 +71,10 @@ root.render(
           <Route path='/routes/selected/marangu-route' index element={<MaranguRoute />} />
           <Route path='/routes/selected/umbwe-route' index element={<UmbweRoute />} />
           
+          <Route path='/routes/selected/mt-kenya/chogoria-route' index element={<ChogoriaRoute />} />
+          <Route path='/routes/selected/mt-kenya/naro-moru-route' index element={<NaroMoruRoute />} />
+          <Route path='/routes/selected/mt-kenya/sirimon-route' index element={<SirimonRoute />} />
+
           <Route path='/book-now' index element={<BookNow />} />
           <Route path='/confirm-mpesa-code' index element={<ConfirmMpesaCode />} />
           
