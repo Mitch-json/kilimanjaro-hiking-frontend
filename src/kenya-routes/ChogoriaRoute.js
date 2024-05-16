@@ -221,7 +221,7 @@ function ChogoriaRoute() {
                                                         Duration
                                                     </div>
                                                     <div className="booking-bottom padding-top">
-                                                        <span>7 DAYS</span>
+                                                        <span>6 DAYS</span>
                                                     </div>
                                                 </div>
                                             </li>
