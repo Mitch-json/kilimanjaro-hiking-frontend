@@ -203,7 +203,7 @@ function SirimonRoute() {
                                                             Starting At
                                                         </div>
                                                         <div className="booking-bottom padding-top">
-                                                            <span>$2,500</span>
+                                                            <span>$1,000</span>
                                                         </div>
                                                     </div>
 
@@ -214,7 +214,7 @@ function SirimonRoute() {
                                                         Deposit
                                                     </div>
                                                     <div className="booking-bottom padding-top">
-                                                        <span>$495</span> 
+                                                        <span>$200</span> 
                                                     </div>
                                                 </div>
 
