@@ -211,7 +211,7 @@ function App() {
                         </table>
                         <hr className={styles['space-sm']} />
                         <hr className={styles['space-xs']} />
-                        <Link className={[styles.btn, styles['btn-sm'], styles['btn-circle']].join(' ')} to="/routes?loc=all">View Treks</Link>
+                        <Link to="/routes?loc=all" className={[styles.btn, styles['btn-sm'], styles['btn-circle']].join(' ')}>View Treks</Link>
                         <Link to="/our-crew" className={[styles.btn, styles['btn-sm'], styles['btn-circle'], styles['btn-border']].join(' ')} data-anima="fade-left" data-time="3000">View team</Link>
                     </div>
                     <div className={[ styles['align-left-md'], styles['align-right'], styles['col-lg-5']].join(' ')}>
