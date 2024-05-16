@@ -10,7 +10,7 @@ const MtKenyaRoutes = [
         description: 'The route is often described as the most attractive route on Mount Kenya. However, there is no hut for its high camp and it is quite a bit longer',
         difficulty: 'Hard',
         days: 6,
-        price: '2,500',
+        price: '1,000',
     },
     {
         key: 3,
@@ -20,7 +20,7 @@ const MtKenyaRoutes = [
         description: 'This route used to be by far the most popular route as it is relatively short and has huts at Met Station (3050m) and MacKinders (4200m).',
         difficulty: 'Medium',
         days: 4,
-        price: '2,500',
+        price: '1,000',
     },
     {
         key: 5,
@@ -30,7 +30,7 @@ const MtKenyaRoutes = [
         description: 'The route is usually considered one of the easier routes as it climbs relatively gradually with only a couple of steeper sections.',
         difficulty: 'Easy',
         days: 4,
-        price: '2,500',
+        price: '1,000',
     },
 ];
 

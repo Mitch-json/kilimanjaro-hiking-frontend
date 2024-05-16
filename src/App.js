@@ -42,15 +42,18 @@ const responsive = {
     
     {
         url: `${require('./assets/HomePaths/naro-moru-path.png')}`,
-        trip: 'Mt Kenya'
+        trip: 'Mt Kenya',
+        price: '1,000'
     },
     {
         url: `${require('./assets/HomePaths/machame-path.png')}`,
-        trip: 'Mt Kilimanjaro'
+        trip: 'Mt Kilimanjaro',
+        price: '2,500'
     },
     {
         url: `${require('./NewHomePage/media/path.png')}`,
-        trip: 'Mt Kenya'
+        trip: 'Mt Kenya',
+        price: '1000'
     },
   ];
 
@@ -208,7 +211,7 @@ function App() {
                         </table>
                         <hr className={styles['space-sm']} />
                         <hr className={styles['space-xs']} />
-                        <Link className={[styles.btn, styles['btn-sm'], styles['btn-circle']].join(' ')} to="/routes">View Treks</Link>
+                        <Link className={[styles.btn, styles['btn-sm'], styles['btn-circle']].join(' ')} to="/routes?loc=all">View Treks</Link>
                         <Link to="/our-crew" className={[styles.btn, styles['btn-sm'], styles['btn-circle'], styles['btn-border']].join(' ')} data-anima="fade-left" data-time="3000">View team</Link>
                     </div>
                     <div className={[ styles['align-left-md'], styles['align-right'], styles['col-lg-5']].join(' ')}>
@@ -230,7 +233,7 @@ function App() {
                                     <img className="width-415" src={imageUrl.url} alt="slide" />
                                     <hr className="space" />
                                     <h3 className="text-black text-uppercase">{imageUrl.trip}</h3>
-                                    <p className="no-margin">Price from $ 2,500</p>
+                                    <p className="no-margin">Price from $ {imageUrl.price}</p>
                                 </div>
                             );
                             })}

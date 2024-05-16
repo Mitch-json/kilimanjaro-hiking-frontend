@@ -6,7 +6,7 @@ function KilimanjaroRoutes() {
     <>
         <Link to="/routes/selected/northern-circuit-route" className="grid-item cat-1">
             <div className="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                <div className="extra-field">From $49</div>
+                <div className="extra-field">From $2,500</div>
                 <div className="img-box" >
                     <img src={require('../assets/routes/northern-circuit.jpg')} alt="" />
                 </div>
@@ -27,7 +27,7 @@ function KilimanjaroRoutes() {
         </Link>
         <div className="grid-item cat-2" >
             <div className="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                <div className="extra-field">From $99</div>
+                <div className="extra-field">From $2,500</div>
                 <Link className="img-box" to="/routes/selected/lemosho-route">
                     <img src={require('../assets/routes/lemosho.jpg')} alt="" />
                 </Link>
@@ -48,7 +48,7 @@ function KilimanjaroRoutes() {
         </div>
         <div className="grid-item cat-1 cat-3 cat-4">
             <div className="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                <div className="extra-field">From $49</div>
+                <div className="extra-field">From $2,500</div>
                 <Link className="img-box" to="/routes/selected/machame-route">
                     <img src={require('../assets/routes/machame.jpg')} alt="" />
                 </Link>
@@ -69,7 +69,7 @@ function KilimanjaroRoutes() {
         </div>
         <div className="grid-item cat-2">
             <div className="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                <div className="extra-field">From $49</div>
+                <div className="extra-field">From $2,500</div>
                 <Link className="img-box" to="/routes/selected/rongai-route">
                     <img src={require('../assets/routes/rongai.jpg')} alt="" />
                 </Link>
@@ -90,7 +90,7 @@ function KilimanjaroRoutes() {
         </div>
         <div className="grid-item cat-1">
             <div className="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                <div className="extra-field">From $79</div>
+                <div className="extra-field">From $2,500</div>
                 <Link className="img-box" to="/routes/selected/marangu-route">
                     <img src={require('../assets/routes/marangu.jpg')} alt="" />
                 </Link>
@@ -111,7 +111,7 @@ function KilimanjaroRoutes() {
         </div>
         <div className="grid-item cat-2">
             <div className="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                <div className="extra-field">From $449</div>
+                <div className="extra-field">From $2,500</div>
                 <Link className="img-box" to="/routes/selected/umbwe-route">
                     <img src={require('../assets/routes/umbwe.jpg')} alt="" />
                 </Link>
