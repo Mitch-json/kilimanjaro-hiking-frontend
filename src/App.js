@@ -189,7 +189,7 @@ function App() {
                                                 <h3>Mt Kilimanjaro</h3>
                                                 <div className={styles.value}>
                                                     <span className={styles['text-md']} data-to="15" data-speed="2000">15</span>
-                                                    <span>° C - 1700 m</span>
+                                                    <span>° C - 5895 m</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,7 +201,7 @@ function App() {
                                                 <h3>Mt Kenya</h3>
                                                 <div className={styles.value}>
                                                     <span className={styles['text-md']} data-to="11" data-speed="2000">11</span>
-                                                    <span>° C - 2100 m</span>
+                                                    <span>° C - 5199 m</span>
                                                 </div>
                                             </div>
                                         </div>
