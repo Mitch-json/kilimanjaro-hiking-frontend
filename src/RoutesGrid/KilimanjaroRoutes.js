@@ -17,7 +17,7 @@ function KilimanjaroRoutes() {
                         <div><span>Difficulty</span><span>Hard</span></div>
                     </div>
                     <p>
-                        Monte bianco is a mountain located in the deep nature and sourrounded by animals.
+                        Regarded as one of the best routes up Kilimanjaro, the Northern route is also among the newest.
                     </p>
                     <div className="bottom-info">
                         Mt Kilimanjaro, Tanzania
@@ -38,7 +38,7 @@ function KilimanjaroRoutes() {
                         <div><span>Difficulty</span><span>Medium</span></div>
                     </div>
                     <p>
-                        Civetta mountain is a mountain located in the nature and sourrounded by animals.
+                        This route is considered by many as the most beautiful route up Kilimanjaro
                     </p>
                     <div className="bottom-info">
                         Mt Kilimanjaro, Tanzania
@@ -59,7 +59,7 @@ function KilimanjaroRoutes() {
                         <div><span>Difficulty</span><span>Hard</span></div>
                     </div>
                     <p>
-                        Nevegal mountain is a mountain located in the nature and sourrounded by animals.
+                        This Route is considered fairly difficult and is well suited to the more adventurous.
                     </p>
                     <div className="bottom-info">
                         Mt Kilimanjaro, Tanzania
@@ -80,7 +80,7 @@ function KilimanjaroRoutes() {
                         <div><span>Difficulty</span><span>Medium</span></div>
                     </div>
                     <p>
-                        Glacial is a mountain glacier located in the deep nature and sourrounded by animals.
+                        It is a route gaining traction and a recommended option for those looking to stay away from the crowds.
                     </p>
                     <div className="bottom-info">
                         Mt Kilimanjaro, Tanzania
@@ -101,7 +101,7 @@ function KilimanjaroRoutes() {
                         <div><span>Difficulty</span><span>Hard</span></div>
                     </div>
                     <p>
-                        A trip for the whole family located in the deep nature and sourrounded by animals.
+                        The route is 69km in length being the most classic trek up the mountain.
                     </p>
                     <div className="bottom-info">
                         Mt Kilimanjaro, Tanzania
@@ -122,7 +122,7 @@ function KilimanjaroRoutes() {
                         <div><span>Difficulty</span><span>Hard</span></div>
                     </div>
                     <p>
-                        Monte Albert is a mountain located in the deep nature and sourrounded by animals.
+                        The Umbwe route is not often used and said to be the most demanding on the mountain.
                     </p>
                     <div className="bottom-info">
                         Mt Kilimanjaro, Tanzania 
