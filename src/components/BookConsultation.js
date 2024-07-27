@@ -28,29 +28,43 @@ function BookConsultation() {
             setSubmitLoading(true)
     
             const requestOptions = {
-                method: 'POST',
+                // method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({fullName: fullName, whatsApp: whatsApp, email: email})
             };
-            fetch(`${process.env.REACT_APP_BACKEND_URL}/clients/book-consultation`, requestOptions)
-                .then(response => response.json())
-                .then((data) => {
-                    if(data.msg){
-                        setConsSuccessMessage(data.msg)
-                        setSubmitLoading(false)
-                    }else if(data.errorBut){
-                        setConsSuccessMessage("Online Consultation successfully booked")
-                        setSubmitLoading(false)
-                    }else if(data.err){
-                        setConsErrorMessage(data.err)
-                        setSubmitLoading(false)
-                    }
-                })
-                .catch(error =>{
-                    console.log(error)
+            // fetch(`${process.env.REACT_APP_BACKEND_URL}/clients/book-consultation`, requestOptions)
+            //     .then(response => response.json())
+            //     .then((data) => {
+            //         if(data.msg){
+            //             setConsSuccessMessage(data.msg)
+            //             setSubmitLoading(false)
+            //         }else if(data.errorBut){
+            //             setConsSuccessMessage("Online Consultation successfully booked")
+            //             setSubmitLoading(false)
+            //         }else if(data.err){
+            //             setConsErrorMessage(data.err)
+            //             setSubmitLoading(false)
+            //         }
+            //     })
+            //     .catch(error =>{
+            //         console.log(error)
+            //         setSubmitLoading(false)
+            //     })
+            axios.post(`${process.env.REACT_APP_BACKEND_URL}/clients/book-consultation`,requestOptions).then(res => {
+                if(res.data.msg){
+                    setConsSuccessMessage(res.data.msg)
                     setSubmitLoading(false)
-                })
-            
+                }else if(res.data.errorBut){
+                    setConsSuccessMessage("Online Consultation successfully booked")
+                    setSubmitLoading(false)
+                }else if(res.data.err){
+                    setConsErrorMessage(res.data.err)
+                    setSubmitLoading(false)
+                }
+            }).catch(error =>{
+                // toast.error("Network connection error")
+                
+            })
         }else{
             document.querySelector(".invalid-phone").classList.add("invalid-phone-error")
             document.querySelector(".PhoneInputInput").classList.add("PhoneInputInput-error")
