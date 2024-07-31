@@ -105,8 +105,26 @@ function animateCounting(element, targetValue, duration) {
 function App() {
     
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    // const [imgsLoaded, setImgsLoaded] = useState(false)
     let progressLoaded = false;
     useEffect(() => {
+        // const loadImage = image => {
+        //     return new Promise((resolve, reject) => {
+        //       const loadImg = new Image()
+        //       loadImg.src = image.url
+        //       // wait 2 seconds to simulate loading time
+        //       loadImg.onload = () =>
+        //         setTimeout(() => {
+        //           resolve(image.url)
+        //         }, 2000)
+      
+        //       loadImg.onerror = err => reject(err)
+        //     })
+        //   }
+      
+        //   Promise.all(IMAGES.map(image => loadImage(image)))
+        //     .then(() => setImgsLoaded(true))
+        //     .catch(err => console.log("Failed to load images", err))
         
         const handleResize = () => {
             setScreenWidth(window.innerWidth);
@@ -153,6 +171,13 @@ function App() {
         <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" />
       </Helmet>
       
+      {/* {imgsLoaded ? (
+          IMAGES.map(image => (
+            <img key={image.id} src={image.url} alt="Human" />
+          ))
+        ) : (
+          <h1>Loading images...</h1>
+        )} */}
       <Navbar navbarDark={{height: 100, transparent: true, light: true}} />
     <main>
         <section style={{background: "linear-gradient(90deg, rgb(24 24 24) 0px, rgb(24 24 24 / 40%) 0px, rgba(24, 24, 24, 0) 100%), url(https://res.cloudinary.com/dwxzlruyd/image/upload/v1714242412/kilimaj-hiking/HomeParallax.jpg"}} className={[styles.light, styles['ken-burn-center'], styles['section-image'], styles['home-parallax']].join(' ')} data-parallax="scroll" >
@@ -332,7 +357,7 @@ function App() {
                             <ul>
                                 <li>
                                     <Link to="/routes/selected/lemosho-route">
-                                        <img src="http://localhost:3000/static/media/lemosho.9ede0e982479fe403663.jpg" alt="" />
+                                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1690664099/kilimaj-hiking/lemosho/cover/20220531_095828_rezemk.jpg" alt="" />
                                         <span>Mt. Kilimanjaro</span>
                                         Lemosho Route
                                     </Link>
@@ -346,7 +371,7 @@ function App() {
                                 </li>
                                 <li>
                                     <Link to="/routes/selected/machame-route">
-                                        <img src="http://localhost:3000/static/media/machame.66e40b0b3b627b56b1ce.jpg" alt="" />
+                                        <img src="https://res.cloudinary.com/dwxzlruyd/image/upload/v1713559165/kilimaj-hiking/Mt-Kenya-Routes/Burguret-Route.jpg" alt="" />
                                         <span>Mt. Kilimanjaro</span>
                                         Machame Route
                                     </Link>
