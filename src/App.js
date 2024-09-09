@@ -502,7 +502,7 @@ function App() {
         </section> */}
         
     </main>
-      <div id="book-consultation" style={{height: '500px'}}>
+      <div id="book-consultation" style={{height: '650px'}}>
         <BookConsultation />
       </div>
       <Footer />

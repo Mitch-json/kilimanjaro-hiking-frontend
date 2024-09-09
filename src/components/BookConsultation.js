@@ -60,7 +60,7 @@ function BookConsultation() {
     }
 
     return (
-        <div id="consultation-form" style={{height: '500px', paddingTop: '70px'}}>
+        <div id="consultation-form" style={{height: '650px', paddingTop: '70px'}}>
             <h3 id="h3-title" style={{fontSize: '30px', marginBottom: '10px', letterSpacing: '3px', textTransform: 'uppercase'}}>Book Free Zoom Meeting</h3>
             <h3 id="h3-subtitle" style={{fontSize: '20px', marginTop: '5px', letterSpacing: '3px'}}>Online consultation and Q&A with a Guide</h3>
 

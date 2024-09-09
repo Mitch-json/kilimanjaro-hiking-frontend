@@ -6,9 +6,6 @@ body {
 .top-down-btn{
   display: none !important;
 }
-#book-consultation{
-  height: 500px;
-}
 @media (max-width: 600px){
   .top-down-btn{
     display: block !important;
@@ -16,10 +13,6 @@ body {
   }
   .side-by-side-btn{
     display: none;
-  }
-  #book-consultation{
-    height: 600px !important;
-    background-color: #f3f1f0;
   }
 }
 
